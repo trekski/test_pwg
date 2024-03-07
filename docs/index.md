@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Blogging Like a Hacker
-permalink: /posts/12334
 ---
 
 <h1>{{ page.title }}</h1>
