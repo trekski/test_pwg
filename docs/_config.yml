@@ -1,2 +1,2 @@
 baseurl: /test_pwg
-permalink: /posts/:slug
+permalink: /test_pwg/posts/:slug
