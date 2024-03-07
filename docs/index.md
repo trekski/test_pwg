@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blogging Like a Hacker
+slug: 123
 ---
 
 <h1>{{ page.title }}</h1>
