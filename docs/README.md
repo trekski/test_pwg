@@ -1,6 +1,3 @@
----
-x: asb
----
 ### hello world?
 
 [/test_pwg/subfolder/other](/test_pwg/subfolder/other)
