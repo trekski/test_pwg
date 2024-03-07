@@ -1,3 +1,3 @@
 # hello world?
 
-[link](/subfolder/other)
+[/pwgay_test/subfolder/other](/pwgay_test/subfolder/other)
