@@ -1,5 +1,5 @@
 # hello world?
 
-[/pwgay_test/subfolder/other](/pwgay_test/subfolder/other)
+[/test_pwg/subfolder/other](/test_pwg/subfolder/other)
 
-[link]({{ site.baseurl }}/subfolder/other)
+[link test_pwg]({{ site.baseurl }}/subfolder/other)
