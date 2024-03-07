@@ -10,5 +10,3 @@ food: Pizza
 ---
 
 ```3edf```
-
-food: {{ page.food }}
