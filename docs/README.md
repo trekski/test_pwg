@@ -1,3 +1,7 @@
+---
+food: Pizza
+---
+
 ### hello world?
 
 [/test_pwg/subfolder/other](/test_pwg/subfolder/other)
@@ -7,4 +11,4 @@
 
 ```3edf```
 
-{{ page.x }}
+food: {{ page.food }}
