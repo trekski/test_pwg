@@ -1,2 +1,2 @@
 baseurl: /test_pwg
-permalink: /test_pwg/posts/:title:output_ext
+permalink: /test_pwg/posts/:slug:output_ext
