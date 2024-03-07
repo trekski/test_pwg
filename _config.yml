@@ -1,2 +1,3 @@
 baseurl: /test_pwg
 title: "Jekyll Actions Demo"
+permalik: /posts/:slug
