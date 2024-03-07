@@ -1,2 +1,2 @@
 baseurl: /test_pwg
-permalink: /test_pwg/:year/:month/:day/:title:output_ext
+permalink: /test_pwg/:title:output_ext
