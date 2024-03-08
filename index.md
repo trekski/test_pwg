@@ -16,7 +16,7 @@ Welcome to My Home Page
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a {{ post.food }}
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> {{ post.food }}
     </li>
   {% endfor %}
 </ul>
