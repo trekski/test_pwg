@@ -3,6 +3,6 @@ title: "Jekyll Actions Demo"
 permalink: /posts/:slug
 collections:
   posts:
-    output: true
+    output: false
 plugins:
   - jekyll-paginate
