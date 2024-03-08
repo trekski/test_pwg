@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Blogging Like a Hacker
 ---
 
@@ -7,19 +7,11 @@ Welcome to My Home Page
 
 {% assign date = '2020-04-13T10:20:00Z' %}
 
-- Original date - {{ date }}
-- With timeago filter - {{ date | timeago }}
+1. Original date - {{ date }}
+2. With timeago filter - {{ date | timeago }}
 
-- 
-<h1>{{ page.title }}</h1>
+{% for post in site.posts %}
+* [{{ post.title }}]({{ site.baseurl }}{{ post.url }})  
+  {{ post.content }}
+{% endfor %}
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <div>
-        {{ post.output }}
-      </div>
-    </li>
-  {% endfor %}
-</ul>
