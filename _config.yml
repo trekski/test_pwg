@@ -1,8 +1,5 @@
 baseurl: /test_pwg
 title: "Jekyll Actions Demo"
 permalink: /posts/:slug
-collections:
-  posts:
-    output: false
 plugins:
   - jekyll-paginate
