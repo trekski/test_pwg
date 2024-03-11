@@ -1,5 +1,6 @@
 baseurl: 
 title: "Jekyll Actions Demo ?"
+source: _source
 permalink: /posts/:categories/:slug:output_ext
 # include:
 #   - forum/3_uczelnia/watek_4/.htaccess
