@@ -2,3 +2,5 @@ _site
 Gemfile.lock
 .env
 _psql_dump
+firebase_sdk.html
+.firebase
