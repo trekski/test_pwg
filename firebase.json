@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "_temporary_message",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
