@@ -8,6 +8,10 @@ permalink: /posts/:categories/:slug:output_ext
 keep_files:
   - posts/forum/3_uczelnia/watek_4/.htaccess
   - posts/forum/3_uczelnia/watek_4/.htpasswd
+collections:
+  threads:
+    output: false
+    permalink: /thread/:path/
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
