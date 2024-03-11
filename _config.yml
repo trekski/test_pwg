@@ -1,6 +1,12 @@
-baseurl: /test_pwg
+baseurl: 
 title: "Jekyll Actions Demo ?"
-permalink: /posts/:categories/:slug
+permalink: /posts/:categories/:slug:output_ext
+# include:
+#   - forum/3_uczelnia/watek_4/.htaccess
+#   - forum/3_uczelnia/watek_4/.htpasswd
+keep_files:
+  - posts/forum/3_uczelnia/watek_4/.htaccess
+  - posts/forum/3_uczelnia/watek_4/.htpasswd
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
