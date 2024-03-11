@@ -10,9 +10,9 @@ services:
     image: postgres:latest
     ports:
       - 5432:5432
-    #network_mode: "host"
+    network_mode: "host"
     environment:
-      POSTGRES_DB: dump
+      POSTGRES_DB: ${PSQL_DATABASE}
       POSTGRES_USER: user
       POSTGRES_PASSWORD: qaswerd
     volumes:
