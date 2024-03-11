@@ -1,6 +1,6 @@
 ---
 layout: forum
-title: All Cupcakes
+title: All threads
 pagination: 
   enabled: true
   collection: threads
