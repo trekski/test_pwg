@@ -1,17 +1,13 @@
 baseurl: 
 title: "Jekyll Actions Demo ?"
 source: _source
-permalink: /posts/:categories/:slug:output_ext
-# include:
-#   - forum/3_uczelnia/watek_4/.htaccess
-#   - forum/3_uczelnia/watek_4/.htpasswd
-keep_files:
-  - posts/forum/3_uczelnia/watek_4/.htaccess
-  - posts/forum/3_uczelnia/watek_4/.htpasswd
+permalink: /:categories/:slug:output_ext
 collections:
   threads:
     output: false
     permalink: /thread/:path/
+  posts: 
+    output: false
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
