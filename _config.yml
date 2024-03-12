@@ -1,13 +1,14 @@
 baseurl: 
 title: "Jekyll Actions Demo ?"
-source: _source
+source: _tests
 permalink: /:categories/:slug:output_ext
 collections:
   threads:
+    output: true
+    permalink: /thread/:path:output_ext
+  forum_posts: 
     output: false
-    permalink: /thread/:path/
-  posts: 
-    output: false
+    permalink: /post/:path:output_ext
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
@@ -15,7 +16,7 @@ defaults:
       layout: "default"
   - scope:
       path: ""
-      type: "posts"
+      type: "forum_posts"
     values:
       layout: "post"
 
@@ -36,8 +37,8 @@ pagination:
   per_page: 3 # default 10
 
   # The permalink structure for the paginated pages (this can be any level deep)
-  permalink: '/page/:num/' # Pages are index.html inside this folder (default)
-  # permalink: '/page/:num.html' # Pages are simple html files 
+  # permalink: '/page/:num/' # Pages are index.html inside this folder (default)
+  permalink: '/:num.html' # Pages are simple html files 
   # permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
 
   # Optional the title format for the paginated pages (supports :title for original page title, :num for pagination page number, :max for total number of pages)

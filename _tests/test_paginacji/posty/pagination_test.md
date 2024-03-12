@@ -3,15 +3,9 @@ layout: watek
 title: test
 pagination: 
   enabled: true
-  category: watek_2
+  collection: forum_posts
+  per_page: 1
+  category: watek_1
 ---
 
 hello????
-
-<hr />
-<ul>
-{% for post in paginator.posts %}
-<li> {{ post.title }}</li>
-{% endfor %}
-</ul>
-<hr />

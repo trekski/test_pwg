@@ -10,7 +10,11 @@
     {{ content }}
     <ul>
     {% for post in paginator.posts %}
-        <li>{{ post.title }}</li>
+        <li>{{ post.title }} - {{ post.autor }}<br />
+        {% for c in post.categories %}
+        {{ c }}  +
+        {% endfor %}
+      </li>
     {% endfor %}
     </ul>
 
