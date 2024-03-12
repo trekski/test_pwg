@@ -2,7 +2,7 @@
 layout: forum
 title: All threads
 pagination: 
-  enabled: true
+  enabled:  # change to true to see simple pagination work
   collection: threads
 ---
 
