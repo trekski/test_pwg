@@ -38,7 +38,7 @@ pagination:
 
   # The permalink structure for the paginated pages (this can be any level deep)
   # permalink: '/page/:num/' # Pages are index.html inside this folder (default)
-  permalink: '/:num.html' # Pages are simple html files 
+  permalink: '/page_:num.html' # Pages are simple html files 
   # permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
 
   # Optional the title format for the paginated pages (supports :title for original page title, :num for pagination page number, :max for total number of pages)
@@ -89,7 +89,7 @@ autopages:
   categories: 
     # Optional, the list of layouts that should be processed for every category found in the site
     layouts: 
-      - 'autopage_category.html'
+      - 'thread.html'
     # Optional, the title that each category paginate page should get (:cat is replaced by the Category name)
     title: 'Posts in category :cat'
     # Optional, the permalink for the  pagination page (:cat is replaced), 
@@ -98,10 +98,8 @@ autopages:
     # Optional, when true logging related to category pages will be supressed.
     silent: false
     slugify:
-      mode: 'default'   # :cat is slugified. Modes: default, raw, pretty, ascii, latin
+      mode: 'raw'   # :cat is slugified. Modes: default, raw, pretty, ascii, latin
       case: false       # Whether to replace all uppercase letters with their lowercase counterparts
 
   collections:
-  l ayouts: 
-      - 'autopage_collection.html'
-    
+    layouts: [] # only way to really turn off collections autopages

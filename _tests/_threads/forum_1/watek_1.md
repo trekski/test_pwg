@@ -1,6 +1,6 @@
 ---
+forum: 1
 slug: watek_1
 data: 2022-01-01
 topic: watek 1 aaa
-categories: 1_ogolne
 ---
