@@ -1,6 +1,8 @@
 ---
+forum: 1
+watek: 2
+category: 2
 autor: paxi
-categories: 1_ogolne watek_2
 ---
 
 wszystkiego najlepszego z okazji mikolajek

@@ -6,14 +6,12 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/main.css">
   </head>
   <body>
-    <h3>paginated layout</h3>
+    <h3>WATEK paginated layout</h3>
     {{ content }}
     <ul>
     {% for post in paginator.posts %}
         <li>{{ post.title }} - {{ post.autor }}<br />
-        {% for c in post.categories %}
-        {{ c }}  +
-        {% endfor %}
+        {{ post.content }}
       </li>
     {% endfor %}
     </ul>
