@@ -121,7 +121,7 @@ hr {
 }
 
 #header_area {
-    padding: 1em;
+    padding: .8em;
     display: flex;
     flex-direction: column;
     row-gap: .3em;
@@ -187,7 +187,7 @@ hr {
     flex-direction: row;
     border-bottom: solid 1.5px var(--light-neutral);
     border-top: solid 1.5px var(--light-neutral);
-    padding: 5px;
+    padding: .2em;
     margin: 0em .2em;
 }
 
