@@ -13,7 +13,29 @@ body {
     justify-content: center;
     margin: 0px;
     background-color: whitesmoke;
+        font-family: "Roboto Flex", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+        font-variation-settings:
+          "slnt" 0,
+          "wdth" 100,
+          "GRAD" 0,
+          "XOPQ" 96,
+          "XTRA" 468,
+          "YOPQ" 79,
+          "YTAS" 750,
+          "YTDE" -203,
+          "YTFI" 738,
+          "YTLC" 514,
+          "YTUC" 712;
 }
+.mono {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 a {
     color: inherit;
     text-decoration: none;
@@ -50,7 +72,7 @@ div.breadcrumbs_item {
     padding-left: 5px;
     margin: 0px;
     font-size: smaller;
-    font-weight: bold;
+    font-weight: 600;
 }
 div.breadcrumbs_item:nth-child(n+2)::before {
     content: " \00BB  ";
@@ -108,7 +130,7 @@ div.forum_item_texts {
     
 }
 div.forum_name {
-    color: var(--light-accent);
+    color: var(--light-neutral);
     font-weight: bolder;
 }
 div.forum_description {
@@ -119,7 +141,10 @@ div.forum_items {
     padding: .1em .5em;
 }
 div.forum_item_meta {
-    font-size: small;
+    font-size: 80%;
+}
+div.forum_first_post, div.forum_last_post  {
+    font-size: 80%;
 }
 div.forum_item_meta * {
     color: #666;
