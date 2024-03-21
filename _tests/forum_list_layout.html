@@ -3,36 +3,41 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour:SCAN@-20&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 <meta http-equiv="refresh" content="x" />
 <html lang="pl">
   <head>
     <meta charset="utf-8">
     <title>PWGay - Politechnika Warszawska w Kolorach Tęczy - archiwum</title>
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/forum_list.css">
   </head>
   <body>
-    <div class="main_container">
-      <div class="header_area">
+    <div id="main_container">
+      <div id="header_area">
         <!-- HEADER -->
-        <div class="main_header">
-            <div class="header_name">PWGay</div>
-            <div class="header_tagline">Politechnika Warszawska w Kolorach Tęczy</div>
+        <div id="main_header">
+            <div id="header_name" class="sixtyfour">PWGay</div>
+            <div id="header_tagline" class="vt323-regular">Politechnika Warszawska w Kolorach Tęczy</div>
         </div>
         <!-- MENU-->
-        <div class="main_menu">
-          <div class="menu_item"><a href="#"">Forum</a></div>
-          <div class="menu_item"><a href="#">About</a></div>
-          <div class="menu_item"><a href="#">History</a></div>
-        </div>
+        <ul id="main_menu">
+          <li class="menu_item"><a href="#">Forum</a></li>
+          <li class="menu_item"><a href="#">About</a></li>
+          <li class="menu_item"><a href="#">History</a></li>
+        </ul>
         <!-- BREADCRUMBS-->
-        <div class="breadcrumbs mono">
+        <div id="breadcrumbs" class="mono">
           <div class="breadcrumbs_item"><a href="http://www.wp.pl">forum ogolne</a></div>
           <div class="breadcrumbs_item"><a href="http://www.wp.pl">witmy na naszej stronie</a></div>
           <div class="breadcrumbs_item"><a href="http://www.wp.pl">str 1 z n</a></div>
         </div>
       </div>
       <!-- MAIN CONTENT -->
-      <div class="content_container">
+      <div id="content_container">
         <div class="forum_group">
           <div class="forum_group_header">
             Świat i Ludzie
@@ -43,11 +48,10 @@
                 <div class=forum_name>Ogólny</div>
                 <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
               </div>
-              <div class="forum_item_meta">
-                <div class="forum_thread_cnt mono"><strong>123</strong> wątki</div>
-                <div class="forum_post_cnt mono"><strong>456</strong> posty</div>
-                <div class="forum_last_post mono">od: 2023-02-04</div>
-                <div class="forum_first_post mono">do 2023-03-31</div>
+              <div class="forum_item_meta mono">
+                <div class="has_icon"><span>forum</span> 123</div>
+                <div class="has_icon"><span>note_stack</span> 456</div>
+                <div class="has_icon"><span>calendar_month</span> 4 Lut '23 - 31 Mar '23</div>
               </div>
             </div>
             <hr />
@@ -56,11 +60,11 @@
                 <div class=forum_name>Przegląd prasy</div>
                 <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
               </div>
-              <div class="forum_item_meta">
-                <div class="forum_thread_cnt">123 wątki</div>
-                <div class="forum_post_cnt">456 posty</div>
-                <div class="forum_last_post">od: 2023-02-04</div>
-                <div class="forum_first_post">do 2023-03-31</div>
+              
+              <div class="forum_item_meta mono">
+                <div class="has_icon"><span>forum</span> 123</div>
+                <div class="has_icon"><span>note_stack</span> 456</div>
+                <div class="has_icon"><span>calendar_month</span> 4 Lut '23 - 31 Mar '23</div>
               </div>
             </div>
             <hr />
@@ -69,11 +73,10 @@
                 <div class=forum_name>Uczelnia i studia</div>
                 <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
               </div>
-              <div class="forum_item_meta">
-                <div class="forum_thread_cnt">123 wątki</div>
-                <div class="forum_post_cnt">456 posty</div>
-                <div class="forum_last_post">od: 2023-02-04</div>
-                <div class="forum_first_post">do 2023-03-31</div>
+              <div class="forum_item_meta mono">
+                <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+                <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+                <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
               </div>
             </div>
             <hr />
@@ -82,11 +85,10 @@
                 <div class=forum_name>Ogłoszenia</div>
                 <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
               </div>
-              <div class="forum_item_meta">
-                <div class="forum_thread_cnt">123 wątki</div>
-                <div class="forum_post_cnt">456 posty</div>
-                <div class="forum_last_post">od: 2023-02-04</div>
-                <div class="forum_first_post">do 2023-03-31</div>
+              <div class="forum_item_meta mono">
+                <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+                <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+                <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
               </div>
             </div>
           </div>
@@ -102,10 +104,9 @@
                 <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
               </div>
               <div class="forum_item_meta">
-                <div class="forum_thread_cnt">123 wątki</div>
-                <div class="forum_post_cnt">456 posty</div>
-                <div class="forum_last_post">od: 2023-02-04</div>
-                <div class="forum_first_post">do 2023-03-31</div>
+                <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+                <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+                <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
               </div>
             </div>
             <hr />
@@ -115,10 +116,9 @@
                 <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
               </div>
               <div class="forum_item_meta">
-                <div class="forum_thread_cnt">123 wątki</div>
-                <div class="forum_post_cnt">456 posty</div>
-                <div class="forum_last_post">od: 2023-02-04</div>
-                <div class="forum_first_post">do 2023-03-31</div>
+                <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+                <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+                <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
               </div>
             </div>
             <hr />
@@ -128,10 +128,9 @@
                 <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
               </div>
               <div class="forum_item_meta">
-                <div class="forum_thread_cnt">123 wątki</div>
-                <div class="forum_post_cnt">456 posty</div>
-                <div class="forum_last_post">od: 2023-02-04</div>
-                <div class="forum_first_post">do 2023-03-31</div>
+                <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+                <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+                <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
               </div>
             </div>
           </div>
@@ -147,10 +146,9 @@
                 <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
               </div>
               <div class="forum_item_meta">
-                <div class="forum_thread_cnt">123 wątki</div>
-                <div class="forum_post_cnt">456 posty</div>
-                <div class="forum_last_post">od: 2023-02-04</div>
-                <div class="forum_first_post">do 2023-03-31</div>
+                <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+                <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+                <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
               </div>
             </div>
             <hr />
@@ -160,10 +158,9 @@
                 <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
               </div>
               <div class="forum_item_meta">
-                <div class="forum_thread_cnt">123 wątki</div>
-                <div class="forum_post_cnt">456 posty</div>
-                <div class="forum_last_post">od: 2023-02-04</div>
-                <div class="forum_first_post">do 2023-03-31</div>
+                <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+                <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+                <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
               </div>
             </div>
           </div>
@@ -178,22 +175,21 @@
               <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
             </div>
             <div class="forum_item_meta">
-              <div class="forum_thread_cnt">123 wątki</div>
-              <div class="forum_post_cnt">456 posty</div>
-              <div class="forum_last_post">od: 2023-02-04</div>
-              <div class="forum_first_post">do 2023-03-31</div>
+              <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+              <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+              <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
             </div>
           </div>
+          <hr />
           <div class="forum_item">
             <div class="forum_item_texts">
               <div class=forum_name>Kącik kulturalny</div>
               <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
             </div>
             <div class="forum_item_meta">
-              <div class="forum_thread_cnt">123 wątki</div>
-              <div class="forum_post_cnt">456 posty</div>
-              <div class="forum_last_post">od: 2023-02-04</div>
-              <div class="forum_first_post">do 2023-03-31</div>
+              <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+              <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+              <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
             </div>
           </div>
         </div>
@@ -207,48 +203,46 @@
               <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
             </div>
             <div class="forum_item_meta">
-              <div class="forum_thread_cnt">123 wątki</div>
-              <div class="forum_post_cnt">456 posty</div>
-              <div class="forum_last_post">od: 2023-02-04</div>
-              <div class="forum_first_post">do 2023-03-31</div>
+              <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+              <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+              <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
             </div>
           </div>
+          <hr />
           <div class="forum_item">
             <div class="forum_item_texts">
               <div class=forum_name>Coming out</div>
               <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
             </div>
             <div class="forum_item_meta">
-              <div class="forum_thread_cnt">123 wątki</div>
-              <div class="forum_post_cnt">456 posty</div>
-              <div class="forum_last_post">od: 2023-02-04</div>
-              <div class="forum_first_post">do 2023-03-31</div>
+              <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+              <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+              <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
             </div>
           </div>
+          <hr />
           <div class="forum_item">
             <div class="forum_item_texts">
               <div class=forum_name>Opowiadania</div>
               <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
             </div>
             <div class="forum_item_meta">
-              <div class="forum_thread_cnt">123 wątki</div>
-              <div class="forum_post_cnt">456 posty</div>
-              <div class="forum_last_post">od: 2023-02-04</div>
-              <div class="forum_first_post">do 2023-03-31</div>
+              <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+              <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+              <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
             </div>
           </div>
+          <hr />
           <div class="forum_item">
             <div class="forum_item_texts">
               <div class=forum_name>Komentarze do artykułów</div>
               <div class="forum_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis porro perspiciatis culpa suscipit eaque ad maiores sed, </div>
             </div>
             <div class="forum_item_meta">
-              <div class="forum_thread_cnt">123 wątki</div>
-              <div class="forum_post_cnt">456 posty</div>
-              <div class="forum_last_post">od: 2023-02-04</div>
-              <div class="forum_first_post">do 2023-03-31</div>
+              <div class="has_icon" title="123 wątki"><span>forum</span>123</div>
+              <div class="has_icon" title="456 posty"><span>note_stack</span>456</div>
+              <div class="has_icon" title="aktywne od ... do ..."><span>calendar_month</span>04.02.23 - 31.04.23</div>
             </div>
-
           </div>
         </div>
       </div>
