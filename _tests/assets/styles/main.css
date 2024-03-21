@@ -40,9 +40,10 @@ div.menu_item {
 div.breadcrumbs {
     display: flex;
     flex-direction: row;
-    margin: 0px 5px;
-    border-bottom: solid 2px var(--light-neutral);
-    padding-bottom: 5px
+    margin: 7px 12px;
+    border-bottom: solid 1.5px var(--light-neutral);
+    border-top: solid 1.5px var(--light-neutral);
+    padding: 5px
 }
 div.breadcrumbs_item {
     color: var(--light-neutral);
@@ -69,8 +70,8 @@ div.main_container {
 div.main_header {
     background-color: var(--light-accent);
     font-size: large;
-    padding: 0.3em;
-    margin: 1em 1em;
+    padding: 1em;
+    margin: .5em .5em;
     border-radius: 4px;
 }
 div.main_header * {
@@ -98,7 +99,7 @@ div.forum_group {
 }
 div.forum_group_header {
     color: var(--dark-accent);
-    background-color: whitesmoke;
+    background-color: #eee;
     font-weight: bolder;
     padding: 0.3em;
     border-radius: 4px;
