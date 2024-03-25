@@ -18,7 +18,6 @@
 .forum_item {
     display:grid;
     grid-template-columns: 4fr 1fr;
-    flex-direction: row;
     column-gap: 1em;
     padding: .2em .2em;
     margin: .2em .2em;
@@ -49,5 +48,5 @@
 }
 
 .forum_item_meta * {
-    color: #666;
+    color: #777;
 }
