@@ -1,0 +1,103 @@
+.pagination {
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    --border-bottom: solid 1.5px var(--light-neutral);
+    --border-top: solid 1.5px var(--light-neutral);
+    padding: .2em 1em;
+    margin: 0em .2em;
+    font-size: 85%;
+    color: var(--light-neutral);
+}
+
+.pagination.first {
+    border-bottom: solid 1px lightgray;
+    padding-bottom: .5em;
+}
+
+.pagination.last {
+    border-top: solid 1px lightgray;
+    padding-top: .5em;
+}
+
+.pagination * {
+    color: var(--light-neutral);
+    margin: 0px;
+}
+
+.threads_list {
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1em;
+}
+
+.thread_list_item {
+    display: flex;
+    flex-direction: row;
+    padding: 0em 0em;
+}
+
+.thread_list_item:hover .thread_item_desc, .thread_list_item:hover .thread_item_meta {
+    background-color: var(--light-neutral-12);
+}
+
+.thread_list_item:nth-child(n+2) {
+    border-top: solid 1px whitesmoke;
+}
+
+.thread_item_icon, .thread_type_icon {
+    width: 40px;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.global_thread .is_icon::after {
+    content: 'public';
+    color: var(--light-accent);
+}
+
+.thread_announc .is_icon::after {
+    content: 'error';
+    color: coral;
+}
+
+.thread_sticky .is_icon::after {
+    content: 'star';
+    color: #bbb;
+}
+
+.thread_item_desc {
+    flex-grow: 5;
+    padding: .2em;
+}
+
+.thread_item_topic {
+    color: var(--light-accent);
+    font-weight: 500;
+}
+
+.global_thread .thread_item_desc .thread_item_topic ,
+.thread_announc .thread_item_desc .thread_item_topic ,
+.thread_sticky .thread_item_desc .thread_item_topic {
+    color: var(--light-neutral);
+    font-weight: 500;
+}
+
+.thread_item_pages {
+    font-size: small;
+    color: gray;
+}
+
+.thread_item_meta {
+    flex-grow: 0;
+    font-size: smaller;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: .2em;
+}
+.thread_item_meta * {
+    color: #777;
+}
