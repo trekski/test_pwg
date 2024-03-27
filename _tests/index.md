@@ -9,6 +9,8 @@ Welcome to My Home Page
 
 sup^g^
 
+:+1: :lollipop:
+
 sub~2~
 
 <u>underline one</u>
