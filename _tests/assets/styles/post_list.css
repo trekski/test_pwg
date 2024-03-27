@@ -99,10 +99,11 @@
             }
 
             & blockquote {
-                border-left: 3px var(--light-neutral) solid;
+                border-left: 3px var(--light-neutral) dotted;
                 margin: 1em;
-                padding: 5px;
+                padding: 5px 10px;
                 background-color: #f9f9f9;
+                box-shadow: 0px 0px 10px -5px gray ;
 
                 & ::first-line {
                     color: var(--light-neutral);
@@ -110,7 +111,7 @@
                 }
 
                 & * {
-                    color: #666;
+                    color: var(--dark-neutral);
                 }
 
                 & > p {
@@ -122,12 +123,15 @@
             }
 
             & pre  {
-                border-left: 3px var(--light-accent) solid;
+                border-bottom: 1px #f0f0f0 solid;
+                border-right: 1px #f0f0f0 solid;
+                border-left: 3px var(--light-accent) double;
                 margin: 1em;
-                padding: 5px;
+                padding: .5em;
                 background-color: #f9f9f9;
                 & > code {
                     color: var(--light-accent);
+                    background: none;
                 }
             }
 
