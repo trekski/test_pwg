@@ -1,0 +1,141 @@
+.post_item {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+
+    & > div:first-child { /* author pane*/
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: .1em;
+
+        & > img {
+            width: 90%;
+        }
+
+        & > div {
+            color:#777;
+            font-size: smaller;
+        }
+
+        /* username */
+        & > div:first-of-type { 
+            font-weight: 600;
+            &.admin {
+                color: darkred;
+            }
+            &.mod {
+                color: darkgreen    ;
+            }
+        }
+
+        /* ranga */
+        & > div:nth-of-type(2) { 
+            font-style: italic;
+        }
+
+        /* joined date */
+        & > div:nth-of-type(3)::before { 
+            font-family: 'Material Symbols Outlined';
+            content: 'calendar_add_on';
+        }
+
+         /* number of posts */
+        & > div:nth-of-type(4)::before {
+            font-family: 'Material Symbols Outlined';
+            content: 'note_stack';
+        }
+    }
+
+    & > div:nth-child(2) { /* post contents*/
+
+        display: flex;
+        flex-direction: column;
+        gap: .3em;
+        
+        & > div {
+            padding: 0em 0.3em;
+        }
+
+        /* post title */
+        & > div:nth-child(1) {
+            color: var(--dark-accent);
+            background-color: #eee;
+            padding: 0.3em;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            & > a::after {
+                font-family: 'Material Symbols Outlined';
+                content: 'vertical_align_top';
+            }
+        }
+
+        /* post date and time*/
+        & > div:nth-child(2) {
+            font-size: smaller;
+            border-bottom: solid 1px whitesmoke;
+            padding-bottom: .2em;
+            color: #777;
+            & > span:nth-child(1)::before {
+                font-family: 'Material Symbols Outlined';
+                content: 'calendar_month';
+            }
+            & > span:nth-child(2)::before {
+                font-family: 'Material Symbols Outlined';
+                content: 'schedule';
+            }
+        }
+
+        /* post actual content*/
+        & > div:nth-child(3) {
+
+            padding: 0em .2em;
+
+            & > p {
+                margin: 0em;
+                margin-bottom: .3em;
+            }
+
+            & blockquote {
+                border-left: 3px var(--light-neutral) solid;
+                margin: 1em;
+                padding: 5px;
+                background-color: #f9f9f9;
+
+                & ::first-line {
+                    color: var(--light-neutral);
+                    font-style: italic;
+                }
+
+                & * {
+                    color: #666;
+                }
+
+                & > p {
+                    margin: 0px;
+                    padding: 0px;
+                    margin-bottom: 3px;
+                }
+
+            }
+
+            & pre  {
+                border-left: 3px var(--light-accent) solid;
+                margin: 1em;
+                padding: 5px;
+                background-color: #f9f9f9;
+                & > code {
+                    color: var(--light-accent);
+                }
+            }
+
+            code {
+                background-color: #f0f0f0;
+                color: var(--dark-accent);
+            }
+            
+        }
+    }
+}

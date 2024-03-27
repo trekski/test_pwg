@@ -1,30 +1,3 @@
-.pagination {
-    display:  flex;
-    flex-direction: row;
-    justify-content: space-between;
-    --border-bottom: solid 1.5px var(--light-neutral);
-    --border-top: solid 1.5px var(--light-neutral);
-    padding: .2em 1em;
-    margin: 0em .2em;
-    font-size: 85%;
-    color: var(--light-neutral);
-}
-
-.pagination.first {
-    border-bottom: solid 1px lightgray;
-    padding-bottom: .5em;
-}
-
-.pagination.last {
-    border-top: solid 1px lightgray;
-    padding-top: .5em;
-}
-
-.pagination * {
-    color: var(--light-neutral);
-    margin: 0px;
-}
-
 .threads_list {
     display: flex;
     flex-direction: column;
@@ -52,7 +25,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 .global_thread .is_icon::after {
     content: 'public';
@@ -93,7 +65,7 @@
 
 .thread_item_meta {
     flex-grow: 0;
-    font-size: smaller;
+    font-size: small;
     display:grid;
     grid-template-columns: 1fr 1fr;
     padding: .2em;
