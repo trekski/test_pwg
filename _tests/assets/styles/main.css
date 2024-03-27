@@ -118,6 +118,8 @@ hr {
     min-height: 100vh;
     background-color: white;
     box-shadow: 0px 0px 20px gray ;
+    display: flex;
+    flex-direction: column;
 }
 
 #header_area {
@@ -129,6 +131,7 @@ hr {
 
 #content_container {
     padding: 0em 1.5em;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: .3em;
@@ -208,7 +211,36 @@ hr {
 }
 
 #breadcrumbs .breadcrumbs_item:nth-child(n+2)::before {
-    content: " \00BB  ";
+    content: " \232A ";
+}
+
+/* PAGINATION */
+
+.pagination {
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    --border-bottom: solid 1.5px var(--light-neutral);
+    --border-top: solid 1.5px var(--light-neutral);
+    padding: .2em 1em;
+    margin: 0em .2em;
+    font-size: 85%;
+    color: var(--light-neutral);
+}
+
+.pagination.first {
+    border-bottom: solid 1px lightgray;
+    padding-bottom: .5em;
+}
+
+.pagination.last {
+    border-top: solid 1px lightgray;
+    padding-top: .5em;
+}
+
+.pagination * {
+    color: var(--light-neutral);
+    margin: 0px;
 }
 
 /* FOOTER */

@@ -1,6 +1,9 @@
 # baseurl: 
 title: "PWGAY - Politechnika Warszawska w Kolorach Tęczy - archiwum"
 source: _tests
+kramdown:
+    syntax_highlighter_opts:
+      disable: true
 permalink: /:categories/:slug:output_ext
 collections:
   threads:

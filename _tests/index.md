@@ -21,6 +21,13 @@ sub~2~
 > ferere
 > lalala
 
+```
+some code block
+```
+
+```
+as
+```
 
 {% assign date = '2020-04-13T10:20:00Z' %}
 
