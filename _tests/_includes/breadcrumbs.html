@@ -1,0 +1,5 @@
+<ul>
+{% for b in include.breadcrumbs %}
+ <li>{{ b.name}} -> {{ b.href }}</li>
+{% endfor %}
+</ul>

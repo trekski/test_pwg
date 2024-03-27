@@ -5,9 +5,10 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/main.css">
   </head>
-  <h1>DEFAULT</h1>
   <body>
     <h1>{{ page.title }}</h1>
+    <h2>{{ page.x }}</h2>
+    {% include breadcrumbs.html breadcrumbs = page.breadcrumbs %}
     {{ content }}
   </body>
 </html>
