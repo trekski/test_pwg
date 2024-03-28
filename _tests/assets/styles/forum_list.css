@@ -45,6 +45,8 @@
                 align-content: start;
                 grid-template-columns: 1fr 1fr;
                 color:#777; 
+                font-family: "Roboto Slab", serif;
+                font-weight: 400;
                 & > div::before {
                     font-family: 'Material Symbols Outlined';
                     margin-right: .2em;
