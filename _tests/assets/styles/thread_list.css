@@ -70,6 +70,8 @@
             grid-template-columns: 1fr 1fr;
             padding: .2em;
             color: #777;
+            font-family: "Roboto Slab", serif;
+            font-weight: 400;
             & > div:nth-child(1) {
                 grid-row: 1 / 3;
             }

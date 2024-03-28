@@ -8,7 +8,8 @@
         display: flex;
         flex-direction: column;
         gap: .1em;
-
+        font-family: "Roboto Slab", serif;
+        font-weight: 400;
         & > img {
             width: 90%;
         }
@@ -84,6 +85,8 @@
             border-bottom: solid 1px whitesmoke;
             padding-bottom: .2em;
             color: #777;
+            font-family: "Roboto Slab", serif;
+            font-weight: 400;
             & > span:nth-child(1)::before {
                 font-family: 'Material Symbols Outlined';
                 margin-right: .2em;
