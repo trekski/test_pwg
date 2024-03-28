@@ -1,7 +1,5 @@
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
@@ -28,10 +26,10 @@ body {
     padding: 0px;
     /* background-color: whitesmoke; */
     background-image: url('./stripes.jpeg');
-        font-family: "Roboto Flex", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 350;
-        font-style: normal;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
         font-variation-settings:
           "slnt" 0,
           "wdth" 100,
@@ -47,11 +45,9 @@ body {
 }
 
 div {
-    --border: solid 1px yellow;
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    color: #333
 }
 
 a {
@@ -152,17 +148,25 @@ hr {
     border-radius: 4px;
     color: whitesmoke;
     padding: .7em;
-}
+    
 
-#header_name {
-    font-size:xx-large;
-    font-weight: bolder;
-    color: inherit;
-}
+    &  > div:nth-child(1) {
+        font-size:xx-large;
+        font-weight: bolder;
+        color: inherit;
+        font-family: "Sixtyfour", sans-serif;
+        font-variation-settings:
+            "BLED" 0,
+            "SCAN" -20;
+    }
 
-#header_tagline {
-    --font-style: italic;
-    color: inherit;
+    &  > div:nth-child(2) {
+        --font-style: italic;
+        color: inherit;
+        font-family: "Roboto Slab", serif;
+        font-weight: 400;
+    }
+
 }
 
 /* MAIN MENU */
@@ -173,74 +177,56 @@ hr {
     justify-content: flex-start;
     gap: 2em;
     padding: 0px;
-    padding-left: 1em;
+    padding-left: .8em;
     margin: 0em .4em;
-}
+    font-size: 110%;
 
-#main_menu .menu_item {
-    text-align: center;
-    font-weight: bold;
-    color: var(--light-accent);
+    & > li {
+        text-align: center;
+        font-weight: bold;
+        color: var(--light-accent);
+        &:hover {
+            list-style-type: "⏵ ";
+            &::marker {
+                color: var(--contrast-accent);
+            } 
+        }
+    }
 }
-
-#main_menu .menu_item:hover {
-    list-style-type: "⏵ ";
-}
-
-#main_menu .menu_item:hover::marker {
-    color: var(--contrast-accent);
-} 
 
 /* BREADCRUMBS */
 
-#breadcrumbs {
+#breadcrumbs, .pagination {
     display: flex;
     flex-direction: row;
-    border-bottom: solid 1.5px var(--light-neutral);
-    border-top: solid 1.5px var(--light-neutral);
-    padding: .2em;
-    margin: 0em .2em;
-}
-
-#breadcrumbs .breadcrumbs_item {
+    border-bottom: solid 1px var(--light-neutral);
+    border-top: solid 1px var(--light-neutral);
     color: var(--light-neutral);
-    padding-left: 5px;
-    margin: 0px;
-    font-size: smaller;
-    font-weight: 600;
+    padding: .2em .2em;
+    margin: 0em 0em;
+
+    & > div {
+        padding: 0px 5px;
+        margin: 0px;
+        font-size: smaller;
+        font-weight: 400;
+    }
 }
 
-#breadcrumbs .breadcrumbs_item:nth-child(n+2)::before {
+#breadcrumbs > div:nth-child(n+2)::before {
     content: " \232A ";
 }
 
 /* PAGINATION */
 
 .pagination {
-    display:  flex;
-    flex-direction: row;
     justify-content: space-between;
-    --border-bottom: solid 1.5px var(--light-neutral);
-    --border-top: solid 1.5px var(--light-neutral);
-    padding: .2em 1em;
-    margin: 0em .2em;
-    font-size: 85%;
-    color: var(--light-neutral);
-}
-
-.pagination.first {
-    border-bottom: solid 1px lightgray;
-    padding-bottom: .5em;
-}
-
-.pagination.last {
-    border-top: solid 1px lightgray;
-    padding-top: .5em;
-}
-
-.pagination * {
-    color: var(--light-neutral);
-    margin: 0px;
+    &.first {
+        border-top: none;
+    }
+    &.last {
+        border-bottom: none;
+    }
 }
 
 /* FOOTER */
