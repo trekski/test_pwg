@@ -1,14 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>PWGay - Politechnika Warszawska w Kolorach Tęczy - archiwum</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/forum_list.css">
   </head>
   <body>
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.x }}</h2>
-    {% include breadcrumbs.html breadcrumbs = page.breadcrumbs %}
-    {{ content }}
+    <div id="main_container">
+      <div id="header_area">
+        <!-- HEADER -->
+        <div id="main_header">
+            <div>PWGay</div>
+            <div>Politechnika Warszawska w Kolorach Tęczy</div>
+        </div>
+        <!-- MENU-->
+        <ul id="main_menu">
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">History</a></li>
+        </ul>
+        <div>
+          <!-- BREADCRUMBS-->
+          {% include breadcrumbs.html breadcrumbs = page.breadcrumbs %}
+        </div>
+      </div>
+      <!-- MAIN CONTENT -->
+      <div id="content_container">
+{{ content }}
+      </div>
+      <!-- FOOTER -->
+      <div id="footer_area">
+        <!-- FOOTER DETAILS -->
+        <div id="main_footer">
+        Archium postów forum "PWGay" | layout &copy;trekker | problemy, uwagi, zażalena: <a href="https://forms.gle/Xobu9ptXFNMecXPT7">tutaj</a> 
+        </div>
+      </div>
+    </div>
   </body>
 </html>
