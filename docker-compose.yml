@@ -5,12 +5,12 @@ services:
       - "4000:4000"
     volumes:
       - .:/srv/jekyll
-    network_mode: "host"
+    # network_mode: "host" # use for Ubuntu, possible: do not use for MacOS?
   php-bb-psql:
     image: postgres:latest
     ports:
       - 5432:5432
-    network_mode: "host"
+    # network_mode: "host" # do not use for MacOS, use for Ubuntu
     environment:
       POSTGRES_DB: ${PSQL_DATABASE}
       POSTGRES_USER: user

@@ -1,9 +1,6 @@
 ---
-x: asdee
+layout: main
 breadcrumbs:
-    - name: aaa
-      href: bbb
-    - name: ccc
-      href: ddd
+    - name: lista for
+      href: '#'
 ---
-hello world!

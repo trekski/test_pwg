@@ -1,5 +1,5 @@
-<ul>
-{% for b in include.breadcrumbs %}
- <li>{{ b.name}} -> {{ b.href }}</li>
-{% endfor %}
-</ul>
+<div id="breadcrumbs">
+  {% for b in include.breadcrumbs %}
+  <div><a href="{{ b.href }}">{{ b.name }}</a></div>
+  {% endfor %}
+</div>
