@@ -1,52 +1,51 @@
 .forum_group {
     margin-bottom: 0.5em;
-    
-}
 
-.forum_group_header {
-    color: var(--dark-accent);
-    background-color: #eee;
-    font-weight: bolder;
-    padding: 0.3em;
-    border-radius: 4px;
-}
+    /* group header */
+    & > div:first-child {
+        color: var(--dark-accent);
+        background-color: #eee;
+        font-weight: bolder;
+        padding: 0.3em;
+        border-radius: 4px;
+    }
 
-.forum_items {
-    padding: .1em .5em;
-}
+    /* group items */
+    & > div:nth-child(2) {
+        padding: .1em .5em;
 
-.forum_item {
-    display:grid;
-    grid-template-columns: 4fr 1fr;
-    column-gap: 1em;
-    padding: .2em .2em;
-    margin: .2em .2em;
-}
+        /* single item */
+        & > a {
+            display:grid;
+            grid-template-columns: 4fr 1fr;
+            column-gap: 1em;
+            padding: .2em .2em;
+            margin: .2em .2em;
 
-.forum_item:hover {
-    background-color: var(--light-neutral-12);
-}
+            &:hover {
+                background-color: var(--light-neutral-12);
+            }
 
-.forum_name {
-    color: var(--light-neutral);
-    font-weight: bolder;
-}
+            /* forum naem and description */
+            & > div:first-child {
+                & > div:first-child {
+                    color: var(--light-neutral);
+                    font-weight: bolder;
+                }
+                & > div:nth-child(2) {
+                    color: #666;
+                    font-size: 95%;
+                }
+            }
 
-.forum_description {
-    color: #666;
-    font-size: 95%;
-}
-
-.forum_item_meta {
-    font-size: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 0.5em;
-    align-content: start;
-   
-}
-
-.forum_item_meta * {
-    color: #777;
+            /* forum meta */
+            & > div:nth-child(2) {
+                font-size: 80%;
+                display: grid;
+                align-content: start;
+                grid-template-columns: 1fr 1fr;
+                color:#777; 
+            }
+        }
+    }    
 }
