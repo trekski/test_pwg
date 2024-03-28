@@ -37,12 +37,18 @@
         /* joined date */
         & > div:nth-of-type(3)::before { 
             font-family: 'Material Symbols Outlined';
-            content: 'calendar_add_on';
+            margin-right: .2em;
+            position: relative;
+            top: .1em;
+            content: 'person_add';
         }
 
          /* number of posts */
         & > div:nth-of-type(4)::before {
             font-family: 'Material Symbols Outlined';
+            margin-right: .2em;
+            position: relative;
+            top: .1em;
             content: 'note_stack';
         }
     }
@@ -80,10 +86,16 @@
             color: #777;
             & > span:nth-child(1)::before {
                 font-family: 'Material Symbols Outlined';
+                margin-right: .2em;
+                position: relative;
+                top: .1em;
                 content: 'calendar_month';
             }
             & > span:nth-child(2)::before {
                 font-family: 'Material Symbols Outlined';
+                margin-right: .2em;
+                position: relative;
+                top: .1em;
                 content: 'schedule';
             }
         }

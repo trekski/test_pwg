@@ -45,6 +45,24 @@
                 align-content: start;
                 grid-template-columns: 1fr 1fr;
                 color:#777; 
+                & > div::before {
+                    font-family: 'Material Symbols Outlined';
+                    margin-right: .2em;
+                    position: relative;
+                    top: .1em;
+                }
+                & > div:nth-child(1)::before {
+                    content: 'forum';
+                }
+                & > div:nth-child(2)::before {
+                    content: 'note_stack';
+                }
+                & > div:nth-child(3)::before {
+                    content: 'date_range';
+                }
+                & > div:nth-child(4)::before {
+                    content: 'calendar_month';
+                }
             }
         }
     }    
