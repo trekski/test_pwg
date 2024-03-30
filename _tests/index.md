@@ -1,9 +1,7 @@
 ---
 layout: default
 breadcrumbs:
-    - name: lista for
+    - name: Witaj!
       href: '#'
 ---
-{%- for g in site.data.lista_for%}
-{% include forum_group.html forum_group = g %}
-{%- endfor %}
+hello wrold!
