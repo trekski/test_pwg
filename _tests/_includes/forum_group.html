@@ -3,10 +3,8 @@
         {{ include.forum_group.grp_name }}
     </div>
     <div>
-        <ul>
         {%- for f in include.forum_group.fora %}
         <li>{{ f.forum_name }}</li>
         {%- endfor %}
-        </ul>
     </div>
 </div>
