@@ -1,0 +1,99 @@
+- grp_id: 23	
+  grp_name: Świat i Ludzie
+  fora:
+    - forum_id: 2
+      forum_name: Ogólny
+      forum_description: Forum główne
+      forum_thread_count: 517
+      forum_post_count: 7875
+    - forum_id: 11
+      forum_name: Uczelnia i studia
+      forum_description: 'Sprawy bardziej uczelniane niż gejowskie :smile:'
+      forum_thread_count: 93
+      forum_post_count: 1006
+    - forum_id: 16
+      forum_name: Przegląd prasy
+      forum_description: Odsyłacze do artykułów w prasie (lub w Internecie) no i oczywiście komentarze do nich
+      forum_thread_count: 1189
+      forum_post_count: 9705
+    - forum_id: 22
+      forum_name: Ogłoszenia
+      forum_description: |
+        Ogłoszenia wszelakie: korepetycje, sprzedam/zamienię, szukam współlokatora, wynajmę pokój... itp. Wpisy są moderowane
+        (wszelkie posty o charakterze komercyjnym/reklamowym zostaną usunięte)"
+      forum_thread_count: 130
+      forum_post_count: 343
+- grp_id: 24
+  grp_name: PWGay
+  fora:
+    - forum_id: 18
+      forum_name: Archiwum
+      forum_description: Posty ze starego forum
+      forum_thread_count: 1
+      forum_post_count: 1
+    - forum_id: 19
+      forum_name: Kto skąd?
+      forum_description: Poznajmy się... Z jakich zakątków PW (lub nie PW) przybywacie?
+      forum_thread_count: 134
+      forum_post_count: 3329
+    - forum_id: 40
+      forum_name: Księga gości
+      forum_description: |
+        Tu, szanowny Gościu, możesz powiedzieć nam co o nas myślisz.
+        Wszystkie wpisy są moderowane.
+      forum_thread_count: 2
+      forum_post_count: 7
+- grp_id: 25
+  grp_name: Organizacyjne
+  fora:
+    - forum_id: 3	
+      forum_name: Informacje
+      forum_description: Informacje dla użytkowników forum
+      forum_thread_count: 37
+      forum_post_count: 379
+    - forum_id: 20
+      forum_name: Uwagi i propozycje
+      forum_description: Uwagi i propozycje dotyczące stron i forum, wyglądu i technikaliów
+      forum_thread_count: 64
+      forum_post_count: 1233
+    - forum_id: 41
+      forum_name: Testowy
+      forum_description: 'Tu można eksperymentować - dział specjalnie dla nowych moderów :grin:'
+      forum_thread_count: 9
+      forum_post_count: 28
+- grp_id: 26
+  grp_name: Inne
+  fora:
+    - forum_id: 15
+      forum_name: Hydepark
+      forum_description: Tematy (do)wolne
+      forum_thread_count: 488
+      forum_post_count: 13952
+    - forum_id: 21	
+      forum_name: Kącik kulinarny
+      forum_description: Przystań dla żarłoków i smakoszy
+      forum_thread_count: 57
+      forum_post_count: 293
+- grp_id: 28
+  grp_name: Artykuły
+  fora:
+    - forum_id: 12
+      forum_name: Komentarze do artykułów
+      forum_description: Nazwa forum mówi wszystko. Wątki dla nowych artykułów są tworzone automatycznie
+      forum_thread_count: 1
+      forum_post_count: 5
+    - forum_id: 29
+      forum_name: Coming out
+      forum_description: Coming out czyli wyjście z szafy
+      forum_thread_count: 4
+      forum_post_count: 80
+    - forum_id: 30
+      forum_name: Artykuły
+      forum_description:
+      forum_thread_count: 18
+      forum_post_count: 191
+    - forum_id: 31
+      forum_name: Opowiadania
+      forum_description: Opowiadania maści wszelakiej
+      forum_thread_count: 5
+      forum_post_count: 30
