@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>PWGay - Politechnika Warszawska w Kolorach Tęczy - archiwum</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/main.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/forum_list.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/styles/main.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/styles/forum_list.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/styles/thread_list.css">
   </head>
   <body>
     <div id="main_container">
@@ -16,8 +17,8 @@
         </div>
         <!-- MENU-->
         <ul id="main_menu">
-          <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
-          <li><a href="{{ site.baseurl }}/forum_list.html">Fora</a></li>
+          <li><a href="{{ site.url }}/index.html">Home</a></li>
+          <li><a href="{{ site.url }}/forum_list.html">Fora</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">History</a></li>
         </ul>
@@ -28,7 +29,7 @@
       </div>
       <!-- MAIN CONTENT -->
       <div id="content_container">
-{{ content }}
+      {{ content }}
       </div>
       <!-- FOOTER -->
       <div id="footer_area">
