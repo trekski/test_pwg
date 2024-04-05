@@ -5,7 +5,7 @@ pagination:
   enabled: true
   collection: threads
   category: 'forum_3'
-  per_page: 30
+  per_page: 25
   sort_field: thread_order 
   trail: 
     before: 2

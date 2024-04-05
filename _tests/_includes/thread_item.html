@@ -1,16 +1,16 @@
 <div class="{{ include.thread.thread_type }}">
   <div title="{{ include.thread.thread_type }}"></div>
   <div>{%- if include.thread.thread_icon != nil -%}
-    <img src="{{ site.url }}/assets/icons/{{ include.thread.thread_icon }}">
+    <img src="{{ site.url }}/assets/icons/{{ include.thread.thread_icon }}" title="{{ include.thread.thread_icon_desc }}">
     {%- endif -%}
   </div>
   <div>
-    <div >{{ include.thread.thread_topic }}</div>
+    <div>{{ include.thread.thread_topic }}</div>
     <div>str.: <a>1</a> / <a>2</a> / <a>3</a> / <a>4</a> / <a>5</a></div>
   </div>
   <div> <!-- thread meta -->
-    <div>{{ include.thread.thread_post_count }}</div>
-    <div>{{ include.thread.thread_start }}</div>
-    <div>{{ include.thread.thread_end }}</div>
+    <div title="liczba postów">{{ include.thread.thread_post_count }}</div>
+    <div title="pierwszy post">{{ include.thread.thread_start }}</div>
+    <div title="ostatni post">{{ include.thread.thread_end }}</div>
   </div>
 </div>
