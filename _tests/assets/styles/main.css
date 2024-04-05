@@ -186,7 +186,7 @@ hr {
         font-weight: bold;
         color: var(--light-accent);
         &:hover {
-            list-style-type: "⏵ ";
+            list-style-type: "\25B8  ";
             &::marker {
                 color: var(--contrast-accent);
             } 
@@ -203,7 +203,7 @@ hr {
     border-bottom: solid 1px var(--light-neutral);
     border-top: solid 1px var(--light-neutral);
     color: var(--light-neutral);
-    padding: .2em .2em;
+    padding: .2em .0em;
     margin: 0em 0em;
 
     & > div {
@@ -212,10 +212,6 @@ hr {
         font-size: smaller;
         font-weight: 400;
     }
-}
-
-#breadcrumbs > div:nth-child(n+2)::before {
-    content: " \232A ";
 }
 
 /* PAGINATION */
