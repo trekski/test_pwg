@@ -25,6 +25,12 @@
         <div>
           <!-- BREADCRUMBS-->
           {% include breadcrumbs.html breadcrumbs = page.breadcrumbs %}
+          <!-- PAGINATION : TOP -->
+          {%- if paginator.total_pages > 1 -%}
+          <div class="pagination first">
+            {% include pagination.html %}
+          </div>
+          {%- endif -%}
         </div>
       </div>
       <!-- MAIN CONTENT -->
@@ -34,6 +40,11 @@
       <!-- FOOTER -->
       <div id="footer_area">
         <!-- FOOTER DETAILS -->
+          {%- if paginator.total_pages > 1 -%}
+          <div class="pagination last">
+            {% include pagination.html %}
+          </div>
+          {%- endif -%}
         <div id="main_footer">
         Archium postów forum "PWGay" | layout &copy;trekker | problemy, uwagi, zażalena: <a href="https://forms.gle/Xobu9ptXFNMecXPT7">tutaj</a> 
         </div>

@@ -194,12 +194,10 @@ hr {
     }
 }
 
-/* BREADCRUMBS */
+/* BREADCRUMBS and PAGINATION */
 
 #breadcrumbs, .pagination {
     font-family: "Roboto Slab", serif;
-    display: flex;
-    flex-direction: row;
     border-bottom: solid 1px var(--light-neutral);
     border-top: solid 1px var(--light-neutral);
     color: var(--light-neutral);
@@ -214,7 +212,24 @@ hr {
     }
 }
 
-/* PAGINATION */
+#breadcrumbs {
+    display: flex;
+    flex-direction: row;
+}
+
+.pagination {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    & > div:nth-child(1) {
+        text-align: left;
+    }
+    & > div:nth-child(2) {
+        text-align: center;
+    }
+    & > div:nth-child(3) {
+        text-align: right; 
+    }
+}
 
 .pagination {
     justify-content: space-between;
