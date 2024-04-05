@@ -1,4 +1,4 @@
-CREATE or replace FUNCTION add_numbers(a date)
+CREATE or replace FUNCTION data_po_polsku(a date)
 RETURNS varchar AS $$
 declare
     d varchar default '';

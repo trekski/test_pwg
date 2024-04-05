@@ -1,5 +1,8 @@
 <div id="breadcrumbs">
   {% for b in include.breadcrumbs %}
+  {%- if forloop.index0 > 0 -%}
+  <div>&#x232A;</div>
+  {%- endif -%}
   <div><a href="{{ b.href }}">{{ b.name }}</a></div>
   {% endfor %}
 </div>
