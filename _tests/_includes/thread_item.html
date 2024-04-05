@@ -1,13 +1,14 @@
 <div class="{{ include.thread.thread_type }}">
-  <div></div>
+  <div title="{{ include.thread.thread_type }}"></div>
   <div>{%- if include.thread.thread_icon != nil -%}
     <img src="{{ site.url }}/assets/icons/{{ include.thread.thread_icon }}">
-    {%- endif -%}</div>
+    {%- endif -%}
+  </div>
   <div>
     <div >{{ include.thread.thread_topic }}</div>
     <div>str.: <a>1</a> / <a>2</a> / <a>3</a> / <a>4</a> / <a>5</a></div>
   </div>
-  <div>
+  <div> <!-- thread meta -->
     <div>{{ include.thread.thread_post_count }}</div>
     <div>{{ include.thread.thread_start }}</div>
     <div>{{ include.thread.thread_end }}</div>
