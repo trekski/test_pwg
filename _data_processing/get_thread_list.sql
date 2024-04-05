@@ -6,7 +6,8 @@ tags:
     - thread_announc
     - thread_sticky
     - thread_plain
-thread_icon: smiley.gif
+thread_icon: icons/smiley.gif
+thread_icon_desc: smiley
 thread_post_count: 123
 thread_order: 123345678
 thread_start: "2 sty '23"
@@ -15,7 +16,7 @@ thread_end: "4 mar '23"
  with post_counts AS (
 	select
 		topic_id,
-		count(*) as post_count
+		count(*)::varchar as post_count
 	from
 		phpbb_posts
 	group by 1
@@ -33,6 +34,7 @@ select
 	end
 	as thread_type,
 	pi2.icons_url as thread_icon,
+	split_part(split_part(pi2.icons_url, '/', -1), '.', 1) thread_icon_desc,
 	-pp2.post_time as thread_order,
 	data_po_polsku(
         to_timestamp(pp.post_time)::date
