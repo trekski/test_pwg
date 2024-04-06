@@ -1,11 +1,9 @@
 ---
 layout: default
 ---
-{%- assign global_threads = site.threads | where: "thread_type", "global_thread" | sort: "thread_order" %}
-{%- assign announcements = site.threads | where: "thread_type", "thread_announc" | where: "forum", page.forum | sort: "thread_order" %}
 
-{%- assign sticky_posts = site.threads | where: "thread_type", "thread_sticky"  | where: "forum ", page.forum | sort: "thread_order" %}
-{%- assign plain_posts = paginator.posts | where: "thread_type", "" | sort: "thread_order" %}
+{%- assign global_threads = site.threads | where: "thread_type", "global_thread" | sort: "thread_order" %}
+{%- assign announcements = site.threads | where: "thread_type", "thread_announc" | where: "category", page.forum | sort: "thread_order" %}
 
 {%- assign other_posts = paginator.posts | where: "visible_on_top", "no"  | sort: "thread_order" %}
 
@@ -23,4 +21,4 @@ layout: default
   {%- for t in other_posts %}
   {% include thread_item.html thread = t %}
   {%- endfor %}
-</div>    
+</div>      

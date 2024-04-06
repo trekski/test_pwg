@@ -24,7 +24,7 @@ thread_end: "4 mar '23"
 select
 	pt.topic_id,
 	pt.topic_title as thread_topic,
-	pt.forum_id as forum,
+	pt.forum_id::varchar as category, -- for paginaion fitlering
 	CASE pt.topic_type
 		when 3 then 'global_thread'
 		when 2 then 'thread_announc'
@@ -39,8 +39,8 @@ select
 	end as visible_on_top,	
 	pi2.icons_url as thread_icon,
 	split_part(split_part(pi2.icons_url, '/', -1), '.', 1) thread_icon_desc,
-	case pt.topic_type
-		when <> 3 then RANK() over (partition by pt.forum_id order by pt.topic_type desc, pp2.post_time desc)
+	case
+		when pt.topic_type <> 3 then RANK() over (partition by pt.forum_id order by pt.topic_type desc, pp2.post_time desc)
 		else -pp2.post_time
 	end as thread_order,
 	data_po_polsku(
@@ -60,5 +60,5 @@ from
 		on pt.topic_last_post_id = pp2.post_id 
 	left join post_counts as pc
 		on pt.topic_id = pc.topic_id
-where pt.forum_id = 3 --{forum}
+where pt.forum_id = {forum}
 order by thread_order asc
