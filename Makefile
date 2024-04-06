@@ -6,7 +6,7 @@ jekyll-serve:
 jekyll-build:
 	docker-compose run --rm jekyll-pwg jekyll build
 jekyll-shell:
-	docker-compose run --rm jekyll-pwg /bin/bash
+	docker-compose run jekyll-pwg /bin/bash
 local-psql-up:
 	docker-compose up php-bb-psql
 local-psql-down:

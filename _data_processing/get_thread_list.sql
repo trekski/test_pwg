@@ -21,11 +21,10 @@ thread_end: "4 mar '23"
 		phpbb_posts
 	group by 1
  )
-
 select
 	pt.topic_id,
 	pt.topic_title as thread_topic,
-	'forum_' || pt.forum_id as category,
+	pt.forum_id as forum,
 	CASE pt.topic_type
 		when 3 then 'global_thread'
 		when 2 then 'thread_announc'
@@ -33,9 +32,17 @@ select
 		else ''
 	end
 	as thread_type,
+	case pt.topic_type
+		when 3 then 'yes'
+		when '2' then 'yes'
+		else 'no'
+	end as visible_on_top,	
 	pi2.icons_url as thread_icon,
 	split_part(split_part(pi2.icons_url, '/', -1), '.', 1) thread_icon_desc,
-	-pp2.post_time as thread_order,
+	case pt.topic_type
+		when <> 3 then RANK() over (partition by pt.forum_id order by pt.topic_type desc, pp2.post_time desc)
+		else -pp2.post_time
+	end as thread_order,
 	data_po_polsku(
         to_timestamp(pp.post_time)::date
     ) as thread_start,
@@ -53,4 +60,5 @@ from
 		on pt.topic_last_post_id = pp2.post_id 
 	left join post_counts as pc
 		on pt.topic_id = pc.topic_id
-where pt.forum_id = {forum}
+where pt.forum_id = 3 --{forum}
+order by thread_order asc
