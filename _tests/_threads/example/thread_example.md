@@ -1,5 +1,5 @@
 ---
-category: forum_2
+forum: 0
 thread_end: 5 Gru '03
 thread_icon: null
 thread_order: -1070548708
