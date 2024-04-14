@@ -1,0 +1,9 @@
+{% assign u = site.data.users[ include.user_id ] %}
+<div class="">
+    <img src="{{ u.user_avatar }}" />
+    <div class="{{ u.user_role}}">{{ u.username }}</div>    
+    <div>{{ u.rank_title }}</div>
+    <div>{{ u.user_joined_date }}</div>
+    <div>{{ u.user_from }}</div>
+    <div>{{ u.user_posts }}</div>
+</div>
