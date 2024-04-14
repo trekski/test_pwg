@@ -1,3 +1,6 @@
+---
+layout: none
+---
 <!doctype html>
 <meta http-equiv="refresh" content="x" />
 <html lang="pl">
@@ -42,14 +45,9 @@
       </div>
       <!-- MAIN CONTENT -->
       <div id="content_container">
+      {% for i in (2..200) %}
         <div class="post_item">
-            <div class="">
-                <img src="./assets/styles/avatar_placeholder.jpeg" />
-                <div class="admin">trekker</div>    
-                <div>czarownica</div>
-                <div>2024-01-11</div>
-                <div>123</div>
-            </div>
+            {% include user.html user_id = forloop.index %}
             <div>
                 <div><span>jest temat tego posta (taki jak forum?)</span><a href="#top"></a></div>
                 <div class=""><span>2024-01-02</span> <span>13:45</span></div>
@@ -84,44 +82,7 @@
                 </div>
             </div>
         </div>
-        <hr />
-        <div class="post_item">
-            <div class="">
-                <img src="./assets/styles/avatar_placeholder.jpeg" />
-                <div class="mod">trekker</div>    
-                <div>czarownica</div>
-                <div>2024-01-11</div>
-                <div>123</div>
-            </div>
-            <div>
-                <div><span>jest temat tego posta (taki jak forum?)</span><a href="#top"></a></div>
-                <div class="mono"><span> 2024-01-02</span> <span> 13:45</span></div>
-                <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam natus delectus nesciunt temporibus corporis deleniti reprehenderit porro blanditiis culpa voluptate earum perferendis ut, numquam atque inventore exercitationem tempore soluta quasi.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quos beatae, velit pariatur harum eos ab obcaecati repellendus corporis quam porro? Sunt facere ut explicabo dolor ipsum fugiat placeat ipsam.</p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore repellat nesciunt repudiandae, atque eos quasi corporis qui autem, ullam sapiente nostrum praesentium in, asperiores at culpa quis. Similique, obcaecati?</p>
-                </div>
-            </div>
-        </div>
-        <hr />
-        <div class="post_item">
-            <div class="">
-                <img src="./assets/styles/avatar_placeholder.jpeg" />
-                <div>trekker</div>    
-                <div>czarownica</div>
-                <div>2024-01-11</div>
-                <div>123</div>
-            </div>
-            <div>
-                <div><span>jest temat tego posta (taki jak forum?)</span><a href="#top"></a></div>
-                <div class="mono"><span> 2024-01-02</span> <span> 13:45</span></div>
-                <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam natus delectus nesciunt temporibus corporis deleniti reprehenderit porro blanditiis culpa voluptate earum perferendis ut, numquam atque inventore exercitationem tempore soluta quasi.</p>
-                    <p>Lorem ipsum dolor sit <strong>amet consectetur adipisicing elit. Similique quos beatae, velit pariatur</strong> harum eos ab obcaecati repellendus corporis quam porro? Sunt facere ut explicabo dolor ipsum fugiat placeat ipsam.</p>
-                    <p> Lorem ipsum dolor sit amet <em>consectetur adipisicing elit. Cum dolore</em> repellat nesciunt repudiandae, atque eos quasi corporis qui autem, ullam sapiente nostrum praesentium in, asperiores at culpa quis. Similique, obcaecati?</p>
-                </div>
-            </div>
-        </div>
+      {% endfor %}
       </div>
       <!-- FOOTER -->
       <div id="footer_area">

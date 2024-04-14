@@ -21,12 +21,24 @@
 
         /* username */
         & > div:first-of-type { 
-            font-weight: 600;
             &.admin {
                 color: darkred;
+                font-weight: 600;
+            }
+            &.ex_admin {
+                color: #500000;
+                font-weight: 600;
             }
             &.mod {
-                color: darkgreen    ;
+                color: darkgreen;
+                font-weight: 600;
+            }
+            &.ex_mod {
+                color: #004200;
+                font-weight: 600;
+            }
+            &.guest {
+                color: gray;
             }
         }
 
@@ -44,8 +56,17 @@
             content: 'person_add';
         }
 
+         /* where from */
+         & > div:nth-of-type(4)::before {
+            font-family: 'Material Symbols Outlined';
+            margin-right: .2em;
+            position: relative;
+            top: .1em;
+            content: 'pin_drop';
+        }
+
          /* number of posts */
-        & > div:nth-of-type(4)::before {
+        & > div:nth-of-type(5)::before {
             font-family: 'Material Symbols Outlined';
             margin-right: .2em;
             position: relative;
