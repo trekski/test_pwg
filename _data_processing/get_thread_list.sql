@@ -34,7 +34,7 @@ select
 	as thread_type,
 	case pt.topic_type
 		when 3 then 'yes'
-		when '2' then 'yes'
+		when 2 then 'yes'
 		else 'no'
 	end as visible_on_top,	
 	pi2.icons_url as thread_icon,
