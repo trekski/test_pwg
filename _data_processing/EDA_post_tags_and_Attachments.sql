@@ -25,7 +25,7 @@ counted_tags as (
 	select
 		*,
 		has_u::int + 
-		has_b::int + 
+		has_b::int +
 		has_i::int +
 		has_s::int +
 		has_sup::int + 
@@ -43,7 +43,11 @@ counted_tags as (
 )
 select *
 from counted_tags
-where has_Attachment and post_Text like '%[attachment=1%'
+--where has_Attachment and post_Text like '%[attachment=1%'
+--where has_list
+--where num_different_tags = 5
+--where post_Text like '%[/list:o%'
+where has_url and post_text like '%viewforum%'
 
 /*
 where has_url and post_text like '%pwgay%'
@@ -88,3 +92,5 @@ select * from phpbb_attachments where post_msg_id = 36460
 121	ubuntu.JPG
 120	orange.JPG
 */
+
+select * from phpbb_posts pp  where post_text like '%[*:' || pp.bbcode_uid || '%'
