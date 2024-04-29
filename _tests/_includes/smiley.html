@@ -1,2 +1,2 @@
-{% set s = site.data.smilies[ include.smiley ] -%}
-<IMG class="smiley" src="/assets/smilies/{{ s.filename }}" alt="{{ s.description }}" />
+{% assign s = site.data.smiley_dict[ include.smiely_id ] -%}
+<IMG class="smiley" src="/assets/smilies/{{ s.smiley_url }}" alt="{{ s.emotion }}" style="height:{{ s.h}}; width:{{ s.w }};" />
