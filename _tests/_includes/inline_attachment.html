@@ -1,6 +1,2 @@
-{% assign a = site.data.attachments[ include.post_id ][ include.attachment_index ] %}
-{% if a.mimetype contains "image" %}
-<P class="attachment_image"><IMG src="/assets/attachments/{{ a.physical_filename }}/{{ a.real_filename }}" target="_blank" /></P>
-{% else %}
-<A href="/assets/attachments/{{ a.physical_filename }}/{{ a.real_filename }}" download>{{ include.attachment_description | default: a.real_filename }}</A>
-{% endif %}
+{%- assign a = site.data.attachments[ include.post_id ][ include.attachment_index ] -%}
+href="/assets/attachments/{{ a.physical_filename }}/{{ a.real_filename }}" {% if a.mimetype contains "image" %}target="_blank"{% else %}download{% endif %}
