@@ -2,12 +2,31 @@
 layout: default
 autopages:
   permalink: /thread/:cat
+breadcrumb_mode: thread
 pagination:
   enabled: true
   collection: forum_posts
   debug: false
   per_page: 10
 ---
+{%- assign topic_id = page.pagination.category | plus: 0  -%}
+{%- assign topic = site.data.topic_links[topic_id] -%}
+{%- assign forum_id = site.data.topic_links[topic_id].forum_id | plus :0  -%}
+{%- assign parent_id  = site.data.topic_links[topic_id]['parent_id'] | plus: 0  -%}
+{%- assign parent = site.data.lista_for | where: "grp_id", parent_id -%}
+{%- assign parent_name = parent | map: 'grp_name' | first -%}
+{%- assign fora = parent | map: 'fora' | first -%}
+{%- assign forum = fora | where: 'forum_id', forum_id -%}
+{%- assign forum_name = forum | map: 'forum_name' -%}
+<ul>
+<li>parent_id: {{ parent_id }}</li>
+<li>parent_name: {{ parent_name }}</li>
+<li>forum_id: {{ forum_id }}</li>
+<li>forum_name: {{ forum_name }}</li>
+<li>topic_id: {{ topic_id }}</li>
+<li>topic_name: {{ topic.topic_title }}</li>
+</ul>
+<hr />
 {% for p in paginator.posts %}
 <div class="post_item" id="post_{{ p.post_id }}">
   {% include user.html user_id = p.poster_id %}
