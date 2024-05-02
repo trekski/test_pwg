@@ -4,7 +4,8 @@
     gap: .5em;
 
     & > div:first-child { /* author pane*/
-        width: 300px;
+        flex-basis: 150px;
+        flex-shrink: 0;
         display: flex;
         flex-direction: column;
         gap: .1em;
@@ -77,6 +78,7 @@
 
     & > div:nth-child(2) { /* post contents*/
 
+        flex-grow: 3;
         display: flex;
         flex-direction: column;
         gap: .3em;
@@ -184,5 +186,19 @@
             }
 
         }
+    }
+}
+
+.youtube_embed {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    & > div {
+        text-align: center ;
+        font-size: smaller;
+        font-family: "Roboto Slab", serif;
+        color:#777;
     }
 }
