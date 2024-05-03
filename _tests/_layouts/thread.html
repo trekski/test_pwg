@@ -12,7 +12,7 @@ pagination:
 {%- assign topic_id = page.pagination.category | plus: 0  -%}
 {%- assign topic = site.data.topic_links[topic_id] -%}
 {%- assign forum_id = site.data.topic_links[topic_id].forum_id | plus :0  -%}
-{%- assign parent_id  = site.data.topic_links[topic_id]['parent_id'] | plus: 0  -%}
+{%- assign parent_id  = site.data.topic_links[topic_id].parent_id | plus: 0  -%}
 {%- assign parent = site.data.lista_for | where: "grp_id", parent_id -%}
 {%- assign parent_name = parent | map: 'grp_name' | first -%}
 {%- assign fora = parent | map: 'fora' | first -%}
