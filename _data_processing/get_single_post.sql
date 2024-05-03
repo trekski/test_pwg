@@ -11,7 +11,7 @@ SELECT
     1 as post_page,
     to_timestamp(pp.post_time) as post_timestamp,
     TO_CHAR(to_timestamp(pp.post_time)::date, 'yyyy-mm-dd') AS post_date,
-    TO_CHAR(to_timestamp(pp.post_time), 'HH24:MI')::varchar post_time,
+    TO_CHAR(to_timestamp(pp.post_time), 'HH24:MI') || '' AS post_time,
     pp.post_text
 FROM
     phpbb_posts AS pp
