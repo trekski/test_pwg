@@ -1,0 +1,35 @@
+.poll {
+    padding: 1em 3em;
+    margin-bottom: .5em;
+    margin-left: 5em;
+    margin-right: 5em;
+    display: flex;
+    flex-direction: column;
+    row-gap: .7em;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+
+    & > :first-child {
+        font-weight: bolder;
+        color: var(--light-neutral);
+        text-align: center;
+    };
+
+    & > :nth-child(2) {
+        color: var(--dark-neutral);
+        font-weight: bolder;
+    };
+
+    & > :nth-child(3) {
+        color: var(--dark-neutral);
+        display: grid;
+        grid-template-columns: auto 50% auto;
+        column-gap: 10px;
+        row-gap: 3px;
+        justify-content: stretch;
+        & > label { justify-self: start;};
+        & > progress { justify-self: stretch; width: 100%};
+        & > div { justify-self: start};
+    };
+
+}
