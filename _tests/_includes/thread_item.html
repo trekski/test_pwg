@@ -9,7 +9,8 @@
   </div>
   <!--  xxx -->
     <div class="opisy">
-        <div title="{{ include.thread.topic_id }}" class="tytul"><A href="/thread/{{ topic_id }}/index.html">
+        <div title="{{ include.thread.topic_id }}" class="tytul">
+          {% if include.thread.has_poll%}<span title="ankieta"> </span>{% endif %}<A href="/thread/{{ topic_id }}/index.html">
           {{ include.thread.thread_topic }}
         </A></div>
         {% if max_page > 1 -%}
@@ -26,6 +27,7 @@
     <div class="meta"> <!-- thread meta -->
       <div title="liczba postów">{{ include.thread.thread_post_count }}</div>
       <div title="pierwszy post">{{ include.thread.thread_start }}</div>
+      <div></div>
       <div title="ostatni post">{{ include.thread.thread_end }}</div>
     </div>
   <!-- </A> -->

@@ -1,3 +1,7 @@
+hr.post_spacer {
+    margin: .7em 0em;
+}
+
 .post_item {
     display: flex;
     flex-direction: row;

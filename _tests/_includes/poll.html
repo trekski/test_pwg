@@ -1,0 +1,15 @@
+{%- assign topic_id = page.pagination.category | plus: 0 -%}
+{%- assign poll_data = site.data.polls[topic_id] -%}
+{%- if poll_data != null %}
+<div class="poll">
+    <div>Ankieta</div>
+    <div>{{ poll_data['question']}}</div>
+    <div>
+        {% for a in poll_data['answers'] %}
+        <label for="answer_{{ forloop.index }}">{{a['answer']}}</label>
+        <progress id="answer_{{ forloop.index }}" max="{{ poll_data['max_votes'] }}" value="{{ a['num_votes'] }}">{{a['num_votes'] }}</progress>
+        <div>{{a['num_votes'] }}</div>
+        {% endfor %}
+    </div>
+</div>
+{% endif -%}

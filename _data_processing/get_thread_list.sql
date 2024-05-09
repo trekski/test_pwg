@@ -49,7 +49,8 @@ select
 	data_po_polsku(
         to_timestamp(pp2.post_time)::date
     ) as thread_end,
-	pc.post_count AS thread_post_count
+	pc.post_count AS thread_post_count,
+	pt.poll_title <> '' as has_poll
 from
 	phpbb_topics as pt 
 	left join phpbb_icons as pi2

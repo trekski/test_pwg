@@ -9,7 +9,11 @@ pagination:
   debug: false
   per_page: 10
 ---
+{% include poll.html %}
 {% for p in paginator.posts %}
+{% unless forloop.first %}
+<hr class="post_spacer"/>
+{% endunless %}
 <div class="post_item" id="post_{{ p.post_id }}">
   {% include user.html user_id = p.poster_id %}
   <div>
