@@ -13,6 +13,8 @@
         & > div:nth-child(1), & > div:nth-child(2) {
             width: 30px;
             flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -73,9 +75,11 @@
 
         /* thread meta */
         & > div:nth-child(4) {
+            flex-shrink: 0;
             width: 170px;
             font-size: small;
             display:grid;
+            align-content: start;
             grid-template-columns: 1fr 1fr;
             padding: .2em;
             color: #777;
