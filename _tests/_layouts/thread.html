@@ -20,6 +20,7 @@ pagination:
       <div><span>{{ p.post_subject }}</span><a href="#top"></a></div>
       <div><span>{{ p.post_date }}</span> <span>{{ p.post_time }}</span></div>
       <div>{{ p.content }}</div>
+      {% include post_attachment_list.html post_id = p.post_id %}
   </div>
 </div>
 {% endfor %}
