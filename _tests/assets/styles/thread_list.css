@@ -97,9 +97,6 @@
             & > div:nth-child(2)::before {
                 content: 'date_range';
             }
-            & > div:nth-child(3) {
-                
-            }
             & > div:nth-child(4)::before {
                 content: 'calendar_month';
             }
