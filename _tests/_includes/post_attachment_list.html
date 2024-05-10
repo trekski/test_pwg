@@ -1,0 +1,17 @@
+{%- assign post_attachments = site.data.attachments[ include.post_id ] -%}
+{%- if post_attachments != null %}
+<HR class="attachments_sep" />
+<div class="attachment_list">
+    <SPAN>Załączniki</SPAN>
+    <UL class="attachment_list">
+        {%- for att in post_attachments %}
+        <LI>
+            {{ att[1]['real_filename'] }}
+            {% if att[1]['comment'] != '' %}<SPAN> ({{ att[1]['comment'] }})</SPAN>{% endif %}
+            <A class="is_icon" href="/assets/attachments/{{ att[1]['physical_filename'] }}/{{ att[1]['real_filename'] }}" download title="pobierz">download</A>
+            <A class="is_icon" href="/assets/attachments/{{ att[1]['physical_filename'] }}/{{ att[1]['real_filename'] }}" target="_blank" title="otwórz w nowym oknie">open_in_new</A>
+        </LI>
+        {% endfor -%}
+    </UL>
+</DIV>
+{% endif -%}

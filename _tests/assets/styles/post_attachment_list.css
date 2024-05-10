@@ -1,0 +1,30 @@
+hr.attachments_sep {
+    background-color: var(--light-neutral);
+    opacity: 30%;
+    height:1px;
+    margin-top: .5em;
+}
+
+div.attachment_list {
+
+    & > span {
+        font-weight: bolder;
+        color: var(--light-neutral);
+    }
+
+    & > ul {
+        color: var(--dark-neutral);
+        margin: 0em;
+        margin-top: .2em;
+
+        & > li {
+            & > a {
+                color: var(--contrast-accent);
+                position: relative;
+                top: .2em;
+            }
+        }
+        
+    } 
+
+}
