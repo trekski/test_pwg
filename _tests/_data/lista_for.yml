@@ -1,131 +1,129 @@
-- grp_id: 23	
-  grp_name: Świat i Ludzie
-  fora:
-    - forum_id: 2
-      forum_name: Ogólny
-      forum_description: Forum główne
-      forum_thread_count: 517
-      forum_post_count: 7875
-      forum_first_post: "1 Wrz '01"
-      forum_last_post: "3 Gru '23"
-    - forum_id: 11
-      forum_name: Uczelnia i studia
-      forum_description: 'Sprawy bardziej uczelniane niż gejowskie :smile:'
-      forum_thread_count: 93
-      forum_post_count: 1006
-      forum_first_post: "1 Mar '04"
-      forum_last_post: "1 Cze '17"
-    - forum_id: 16
-      forum_name: Przegląd prasy
-      forum_description: Odsyłacze do artykułów w prasie (lub w Internecie) no i oczywiście komentarze do nich
-      forum_thread_count: 1189
-      forum_post_count: 9705
-      forum_first_post: "1 Kwi '04"
-      forum_last_post: "3 Paź '16"
-    - forum_id: 22
-      forum_name: Ogłoszenia
-      forum_description: |
-        Ogłoszenia wszelakie: korepetycje, sprzedam/zamienię, szukam współlokatora, wynajmę pokój... itp. Wpisy są moderowane <br />
-        (wszelkie posty o charakterze komercyjnym/reklamowym zostaną usunięte)
-      forum_thread_count: 130
-      forum_post_count: 343
-      forum_first_post: "2 Wrz '08"
-      forum_last_post: "1 Sty '17"
-- grp_id: 24
+- fora:
+  - forum_description: "Forum g\u0142\xF3wne"
+    forum_first_post: 1 Wrz '01
+    forum_id: 2
+    forum_last_post: 3 Gru '23
+    forum_name: "Og\xF3lny"
+    forum_post_count: 7875
+    forum_thread_count: 517
+  - forum_description: "Sprawy bardziej uczelniane ni\u017C gejowskie :smile:"
+    forum_first_post: 1 Mar '04
+    forum_id: 11
+    forum_last_post: 1 Cze '17
+    forum_name: Uczelnia i studia
+    forum_post_count: 1006
+    forum_thread_count: 93
+  - forum_description: "Odsy\u0142acze do artyku\u0142\xF3w w prasie (lub w Internecie)\
+      \ no i oczywi\u015Bcie komentarze do nich."
+    forum_first_post: 1 Kwi '04
+    forum_id: 16
+    forum_last_post: "3 Pa\u017A '16"
+    forum_name: "Przegl\u0105d prasy"
+    forum_post_count: 9705
+    forum_thread_count: 1189
+  - forum_description: "Og\u0142oszenia wszelakie: korepetycje, sprzedam/zamieni\u0119\
+      , szukam wsp\xF3\u0142lokatora, wynajm\u0119 pok\xF3j... itp\nWpisy s\u0105\
+      \ moderowane\n(wszelkie posty o charakterze komercyjnym/reklamowym zostan\u0105\
+      \ usuni\u0119te)"
+    forum_first_post: 2 Wrz '08
+    forum_id: 22
+    forum_last_post: 1 Sty '17
+    forum_name: "Og\u0142oszenia"
+    forum_post_count: 343
+    forum_thread_count: 130
+  grp_id: 23
+  grp_name: "\u015Awiat i Ludzie"
+- fora:
+  - forum_description: "Poznajmy si\u0119... Z jakich zak\u0105tk\xF3w PW (lub nie\
+      \ PW) przybywacie?"
+    forum_first_post: 3 Cze '05
+    forum_id: 19
+    forum_last_post: "5 Pa\u017A '15"
+    forum_name: "Kto sk\u0105d?"
+    forum_post_count: 3329
+    forum_thread_count: 134
+  - forum_description: "Tu, szanowny Go\u015Bciu, mo\u017Cesz powiedzie\u0107 nam\
+      \ co o nas my\u015Blisz.\nWszystkie wpisy s\u0105 moderowane."
+    forum_first_post: 3 Kwi '09
+    forum_id: 40
+    forum_last_post: "2 Pa\u017A '13"
+    forum_name: "Ksi\u0119ga go\u015Bci"
+    forum_post_count: 7
+    forum_thread_count: 2
+  grp_id: 24
   grp_name: PWGay
-  fora:
-    - forum_id: 19
-      forum_name: Kto skąd?
-      forum_description: Poznajmy się... Z jakich zakątków PW (lub nie PW) przybywacie?
-      forum_thread_count: 134
-      forum_post_count: 3329
-      forum_first_post: "3 CZe '05"
-      forum_last_post: "5 Paź '15"
-    - forum_id: 40
-      forum_name: Księga gości
-      forum_description: |
-        Tu, szanowny Gościu, możesz powiedzieć nam co o nas myślisz. <br />
-        Wszystkie wpisy są moderowane.
-      forum_thread_count: 2
-      forum_post_count: 7
-      forum_first_post: "3 Kwi '09"
-      forum_last_post: "2 Paź '13"
-    - forum_id: 18
-      forum_name: Archiwum
-      forum_description: Posty ze starego forum
-      forum_thread_count: 1
-      forum_post_count: 1
-      forum_first_post: "2 Sie '05"
-      forum_last_post: "2 Sie '05"
-- grp_id: 25
+- fora:
+  - forum_description: "Informacje dla u\u017Cytkownik\xF3w forum"
+    forum_first_post: 2 Mar '05
+    forum_id: 3
+    forum_last_post: 3 Kwi '18
+    forum_name: Informacje
+    forum_post_count: 379
+    forum_thread_count: 37
+  - forum_description: "Uwagi i propozycje dotycz\u0105ce stron i forum, wygl\u0105\
+      du i technikali\xF3w."
+    forum_first_post: 2 Cze '05
+    forum_id: 20
+    forum_last_post: 2 Gru '18
+    forum_name: Uwagi i propozycje
+    forum_post_count: 1233
+    forum_thread_count: 64
+  - forum_description: "Tu mo\u017Cna eksperymentowa\u0107 - dzia\u0142 specjalnie\
+      \ dla nowych moder\xF3w :grin:"
+    forum_first_post: 6 Kwi '11
+    forum_id: 41
+    forum_last_post: 3 Mar '24
+    forum_name: Testowy
+    forum_post_count: 28
+    forum_thread_count: 9
+  grp_id: 25
   grp_name: Organizacyjne
-  fora:
-    - forum_id: 3	
-      forum_name: Informacje
-      forum_description: Informacje dla użytkowników forum
-      forum_thread_count: 37
-      forum_post_count: 379
-      forum_first_post: "2 Mar '05"
-      forum_last_post: "3 Kwi '18"
-    - forum_id: 20
-      forum_name: Uwagi i propozycje
-      forum_description: Uwagi i propozycje dotyczące stron i forum, wyglądu i technikaliów
-      forum_thread_count: 64
-      forum_post_count: 1233
-      forum_first_post: "2 CZe '05"
-      forum_last_post: "2 Gru '18"
-    - forum_id: 41
-      forum_name: Testowy
-      forum_description: 'Tu można eksperymentować - dział specjalnie dla nowych moderów :grin:'
-      forum_thread_count: 9
-      forum_post_count: 28
-      forum_first_post: "6 Kwi '11"
-      forum_last_post: "3 Mar '24"
-- grp_id: 26
+- fora:
+  - forum_description: Tematy (do)wolne.
+    forum_first_post: 2 Gru '03
+    forum_id: 15
+    forum_last_post: 4 Gru '18
+    forum_name: Hydepark
+    forum_post_count: 13952
+    forum_thread_count: 488
+  - forum_description: "Przysta\u0144 dla \u017Car\u0142ok\xF3w i smakoszy"
+    forum_first_post: 1 Sty '08
+    forum_id: 21
+    forum_last_post: 2 Gru '16
+    forum_name: "K\u0105cik kulinarny"
+    forum_post_count: 293
+    forum_thread_count: 57
+  grp_id: 26
   grp_name: Inne
-  fora:
-    - forum_id: 15
-      forum_name: Hydepark
-      forum_description: Tematy (do)wolne
-      forum_thread_count: 488
-      forum_post_count: 13952
-      forum_first_post: "2 Gru '03"
-      forum_last_post: "4 Gru '18"
-    - forum_id: 21	
-      forum_name: Kącik kulinarny
-      forum_description: Przystań dla żarłoków i smakoszy
-      forum_thread_count: 57
-      forum_post_count: 293
-      forum_first_post: "1 Sty '08"
-      forum_last_post: "2 Gru '16"
-- grp_id: 28
-  grp_name: Artykuły
-  fora:
-    - forum_id: 12
-      forum_name: Komentarze do artykułów
-      forum_description: Nazwa forum mówi wszystko. Wątki dla nowych artykułów są tworzone automatycznie
-      forum_thread_count: 1
-      forum_post_count: 5
-      forum_first_post: "5 Lut '06"
-      forum_last_post: "4 Kwi '06"
-    - forum_id: 29
-      forum_name: Coming out
-      forum_description: Coming out czyli wyjście z szafy
-      forum_thread_count: 4
-      forum_post_count: 80
-      forum_first_post: "2 Mar '04"
-      forum_last_post: "1 Maj '11"
-    - forum_id: 30
-      forum_name: Artykuły
-      forum_description:
-      forum_thread_count: 18
-      forum_post_count: 191
-      forum_first_post: "3 Mar '04"
-      forum_last_post: "7 Sty '12" 
-    - forum_id: 31
-      forum_name: Opowiadania
-      forum_description: Opowiadania maści wszelakiej
-      forum_thread_count: 5
-      forum_post_count: 30
-      forum_first_post: "7 Lut '04"
-      forum_last_post: "7 Sty '15"
+- fora:
+  - forum_description: "Nazwa forum m\xF3wi wszystko. W\u0105tki dla nowych artyku\u0142\
+      \xF3w s\u0105 tworzone automatycznie."
+    forum_first_post: 5 Lut '06
+    forum_id: 12
+    forum_last_post: 4 Kwi '06
+    forum_name: "Komentarze do artyku\u0142\xF3w"
+    forum_post_count: 5
+    forum_thread_count: 1
+  - forum_description: "Coming out czyli wyj\u015Bcie z szafy"
+    forum_first_post: 2 Mar '04
+    forum_id: 29
+    forum_last_post: 1 Maj '11
+    forum_name: Coming out
+    forum_post_count: 80
+    forum_thread_count: 4
+  - forum_description: ''
+    forum_first_post: 3 Mar '04
+    forum_id: 30
+    forum_last_post: 7 Sty '12
+    forum_name: "Artyku\u0142y"
+    forum_post_count: 191
+    forum_thread_count: 18
+  - forum_description: "Opowiadania ma\u015Bci wszelakiej"
+    forum_first_post: 7 Lut '04
+    forum_id: 31
+    forum_last_post: 7 Sty '15
+    forum_name: Opowiadania
+    forum_post_count: 30
+    forum_thread_count: 5
+  grp_id: 28
+  grp_name: "Artyku\u0142y"

@@ -1,7 +1,7 @@
 {%- assign post_attachments = site.data.attachments[ include.post_id ] -%}
 {%- if post_attachments != null %}
 <HR class="attachments_sep" />
-<div class="attachment_list">
+<div class="attachment_list mono">
     <SPAN>Załączniki</SPAN>
     <UL class="attachment_list">
         {%- for att in post_attachments %}

@@ -7,8 +7,9 @@ hr.attachments_sep {
 
 div.attachment_list {
 
+    font-size: smaller;
+
     & > span {
-        font-weight: bolder;
         color: var(--light-neutral);
     }
 
