@@ -16,11 +16,26 @@
         {% if max_page > 1 -%}
         <div class="strony">
           strony: 
-          {% for p in (1..max_page) -%}
-            {%- if p == 1 -%}<A href="/thread/{{ topic_id }}/index.html">{{ p }}</A>
-            {%- else %} | <A href="/thread/{{ topic_id }}/page_{{ p }}.html">{{ p }}</A>
-            {%- endif -%}
-          {%- endfor %}
+          {% if max_page < 21 -%}
+            {% for p in (1..max_page) -%}
+              {%- if p == 1 -%}<A href="/thread/{{ topic_id }}/index.html">{{ p }}</A>
+              {%- else %} | <A href="/thread/{{ topic_id }}/page_{{ p }}.html">{{ p }}</A>
+              {%- endif -%}
+            {%- endfor %}
+          {%- else -%}
+            {% for p in (1..10) -%}
+              {%- if p == 1 -%}<A href="/thread/{{ topic_id }}/index.html">{{ p }}</A>
+              {%- else %} | <A href="/thread/{{ topic_id }}/page_{{ p }}.html">{{ p }}</A>
+              {%- endif -%}
+            {%- endfor %}
+            ... 
+            {% assign pre_max_page = max_page | minus: 9 -%}
+            {% for p in (pre_max_page..max_page) -%}
+              {%- if p == pre_max_page -%}<A href="/thread/{{ topic_id }}/index.html">{{ p }}</A>
+              {%- else %} | <A href="/thread/{{ topic_id }}/page_{{ p }}.html">{{ p }}</A>
+              {%- endif -%}
+            {%- endfor %}
+          {%- endif %}
         </div>
         {%- endif %}
     </div>

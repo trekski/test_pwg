@@ -58,13 +58,25 @@
             & > div:nth-child(1) {
                 color: var(--light-accent);
                 font-weight: 500;
+                & > span {
+                    display: inline-flex;
+                    border-radius: 3px;
+                    background-color: darkseagreen;
+                    width: 1.2em;
+                    height: 1.2em;
+                    position: relative;
+                    top: .05em;
+                    align-content: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    font-size: small;
+                }
                 & > span::before {
                     font-family: 'Material Symbols Outlined';
+                    content: 'bar_chart';
+                    color: white;
                     position: relative;
-                    top: .1em;
-                    margin-right: .2em;
-                    content: 'how_to_vote';
-                    color: var(--light-neutral);
+                    top: .05em;
                 }
             }
             & > div:nth-child(2) {
