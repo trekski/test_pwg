@@ -7,6 +7,16 @@ hr.post_spacer {
     flex-direction: row;
     gap: .5em;
 
+    &.highlighted {
+        background-color: #FFE;
+        border-radius: 4px;
+
+        & > div:nth-child(2) > div:nth-child(1) {
+            background-color: beige;
+            color: goldenrod;
+        }
+    }
+
     & > div:first-child { /* author pane*/
         flex-basis: 150px;
         flex-shrink: 0;
