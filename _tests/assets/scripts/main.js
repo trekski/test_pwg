@@ -1,0 +1,1 @@
+document.getElementById(location.hash.substring(1)).classList.add('highlighted');
