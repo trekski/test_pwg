@@ -1,0 +1,29 @@
+---
+layout: default
+breadcrumbs:
+  - name: Lista For
+    href: /forum_list.html
+  - name: '[błąd]'
+    href: '#'
+  - name: '[post niedostępny]'
+    href: '#'
+---
+<div class="modal_message">
+    Ojej!<br />
+    <br />
+    <span id="link_address"></span><br/>
+    <br/>
+    Wydaje się, że post, który próbujesz zobaczyć nie jest dostępny. Jest to możliwe z kilku powodów:
+    <ul>
+        <li>Originalny post został usunięty przez moderatora lub przez jego autora</li>
+        <li>Post do którego ktos linkował był umieszczony w forum lub wątku niepublicznym</li>
+    </ul>
+    Bardzo nam przykro, ale jedyne co możesz zrobić to wrócić do poprzedniej strony
+</div>
+<script>
+    function get(name){
+    if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+        return decodeURIComponent(name[1]);
+    }
+    document.getElementById('link_address').innerHTML = get('link');
+</script>
