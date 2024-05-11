@@ -239,3 +239,18 @@ hr {
     color: whitesmoke;
     padding: .7em;
 }
+
+/* other necesasry elements */
+
+div.modal_message {
+    margin: 2em;
+    padding: 2em;
+    background-color: var(--light-neutral-12);
+    border-radius: .5em;
+    color: var(--dark-neutral);
+
+    & > #link_address {
+        color: var(--light-neutral);
+        font-family: "Roboto Slab", serif;
+    }
+}
