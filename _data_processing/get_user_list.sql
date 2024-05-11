@@ -40,7 +40,7 @@ select
 		when pu.user_id = 1 then '/assets/avatars/avatar_anonymous.png'
 		else
 			case pu.user_avatar_type
-				when 1 then '/assets/avatars/upload/' ||pu.user_id::varchar || '.jpg'
+				when 1 then '/assets/avatars/upload/' ||pu.user_id::varchar || '.' ||  split_part(user_avatar, '.', 2)
 				when 2 then user_avatar -- direct link to the image
 				when 3 then '/assets/avatars/gallery/' || user_avatar
 				else '/assets/avatars/avatar_placeholder.png' -- no avatar, or avatar type 0
