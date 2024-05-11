@@ -136,7 +136,7 @@ hr.post_spacer {
 
             padding: 0em .2em;
 
-            & > a {
+            & a {
                 color: var(--contrast-accent);
                 text-decoration: underline dotted ;
                 &::after {
@@ -180,6 +180,10 @@ hr.post_spacer {
                     margin: 0px;
                     padding: 0px;
                     margin-bottom: 3px;
+                }
+
+                & a {
+                    color: var(--contrast-accent)
                 }
 
             }
