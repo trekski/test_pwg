@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: about
 breadcrumbs:
     - name: O PWGay
       href: '#'
@@ -10,7 +10,7 @@ Dla wielu osób PWG było miejscem, gdzie po raz pierwszy w bezpiecznym i wspier
 
 Historia PWG to też historia polskiego internetu. Pierwotnym Pomysłodawcą forum był Sharpkid. Pierwsza wersja PWG została przez niego założona w 2000 r. na nieistniejącej już platformie do prowadzenia grup dyskusyjnych hostowanej przez interia.pl. Początkowo o forum nie mówiło się głośno. Adres forum był rozpowszechniany pocztą pantoflową. 
 
-W 2003 r. na Interii zaczęło się robić ciasno. Opiekę nad forum przejął wtedy 7z9 a.k.a. Siódemka . Były to czasy gdy samotny entuzjasta mógł bez wielkiego nakładu środków postawić webserver na biurku. Tak też się stało. Forum zostało przeniesione na serwer prowadzony przez Siódemkę. Nowe forum korzystało z silnika PHPBB, zyskaliśmy też nowy adres - pwgay.7z9.net - i nową szatę graficzną. Lata 2003-2006 to też orkes, kiedy forum otworzyło się na szerszą publiczność. Powstała seria vlepek informujących o stornie, rozklejanych po zakamarkach PW (niektóre wersje tych vlepek możecie znaleźć w dziale [Download](/download.html))
+W 2003 r. na Interii zaczęło się robić ciasno. Opiekę nad forum przejął wtedy 7z9 a.k.a. Siódemka . Były to czasy gdy samotny entuzjasta mógł bez wielkiego nakładu środków postawić webserver na biurku. Tak też się stało. Forum zostało przeniesione na serwer prowadzony przez Siódemkę. Nowe forum korzystało z silnika PHPBB, zyskaliśmy też nowy adres - pwgay.7z9.net - i nową szatę graficzną. Lata 2003-2006 to też okres, kiedy forum otworzyło się na szerszą publiczność. Powstała seria vlepek informujących o stornie, rozklejanych po zakamarkach PW (niektóre wersje tych vlepek możecie znaleźć w dziale [Download](/download.html))
 
 Wraz z rosnącą liczbą użytkowników na PWG zaczęły zwracać uwagę media.
 * w 2005 roku audycję o PWG nadało radiu studenów Politechniki - RadioAktywne. Informował o tym między innymi [queer.pl](https://queer.pl/news/189414/radioaktywna-audycja-o-homoseksualizmie-i-homofobii). Niestety dostępne na stronie [RatiaAktywnego](https://www.radioaktywne.pl/) archiuwm auducji nie sięga tak daleego ale dla chętncyh umieściliśmy kopię nagrania audycji w dziale [Download](/download.html)
@@ -23,4 +23,4 @@ W 2010 roku forum przeniosło się po raz kolejny
 
 
 
-<sup>*</sup> Biorąc pod uwagę óczesną demografię studiujących, która przekładała się na obraz "typowego" forumowicza, zasadne wydaje się mówienie w przypadku PWG o <EM>G</EM>LBT raczeni niż o <EM>L</EM>GBT.
+<sup>*</sup> Biorąc pod uwagę ówczesną demografię studiujących, która przekładała się na obraz "typowego" forumowicza, zasadne wydaje się mówienie w przypadku PWG o <EM>G</EM>LBT raczeni niż o <EM>L</EM>GBT.
