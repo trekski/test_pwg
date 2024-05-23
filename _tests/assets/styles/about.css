@@ -1,0 +1,50 @@
+.about {
+    & a {
+    color: var(--contrast-accent);
+        &:hover {
+            color: var(--light-neutral)
+        }
+    }
+    & li {
+        margin-top:  .5em;
+        &:first-child {
+            margin-top: 0em;
+        }
+    }
+}
+
+.downloads_table {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+    & a:after {
+        content: ''
+    }
+    & > div {
+        display: flex;
+        flex-direction: row;
+        column-gap: 1em;
+        & > div {
+            display: flex;
+            flex-direction: column;
+            row-gap: .2em;
+            & > div:nth-child(1) {
+                font-weight: bolder;
+            }
+            & > div:nth-child(2) {
+                /* font-style: italic; */
+                color: #444;
+            }
+            & > div:nth-child(3) {
+                font-family: "Roboto Slab", serif;
+                color: var(--contrast-accent);
+                &::before{
+                    font-family: 'Material Symbols Outlined';
+                    content: 'download';
+                    position: relative;
+                    top: .15em;
+                }
+            }
+        }
+    }
+}

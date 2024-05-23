@@ -1,0 +1,20 @@
+---
+layout: about
+breadcrumbs:
+    - name: Do Pobrania
+      href: '#'
+---
+Tutaj możesz pobdać dodatkowe materiały dotyczące PWG<br />
+<br/>
+<div class="downloads_table">
+  {% for d in site.data.downloads %}
+  <div>
+    <div><a href="{{ d.download_path }}" download><img src="{{ d.preview_path }}"  width="{{ d.preview_width }}" height="{{ d.preview_height }}" /></a></div>
+    <div>
+      <div>{{ d.title }}</div>
+      <div>{{ d.description }}</div>
+      <div><a href="{{ d.download_path }}" download>{{ d.filename }}</a></div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
