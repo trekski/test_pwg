@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: about
 breadcrumbs:
     - name: Witaj!
       href: '#'
