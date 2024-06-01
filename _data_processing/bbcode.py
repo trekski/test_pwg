@@ -115,8 +115,6 @@ class bbcode:
         if self.post_pagination == None:
             self.load_post_pagination()
         
-        print(url)
-
         new_url = url
 
         known_hosts = [
@@ -300,7 +298,6 @@ class bbcode:
             pattern,
             txt
         )
-        print(txt)
         txt = [value if index%2 == 0 else  self.map_smiely_code(value) for index, value in enumerate(txt)]
 
         return ''.join(txt)
