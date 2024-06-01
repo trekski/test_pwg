@@ -45,7 +45,9 @@ select
 				when 3 then '/assets/avatars/gallery/' || user_avatar
 				else '/assets/avatars/avatar_placeholder.png' -- no avatar, or avatar type 0
 			end
-	end as user_avatar
+	end as user_avatar,
+	user_sig,
+	user_sig_bbcode_uid
 from 
 	phpbb_users pu 
 	left join  phpbb_user_group pug
