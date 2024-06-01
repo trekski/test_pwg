@@ -2,6 +2,18 @@ hr.post_spacer {
     margin: .7em 0em;
 }
 
+hr.signature_sep {
+    background-color: var(--light-neutral);
+    opacity: 30%;
+    height:1px;
+    margin-top: .5em;
+}
+
+div.user_signature {
+    font-size: 90%;
+    color: #888
+}
+
 .post_item {
     display: flex;
     flex-direction: row;
