@@ -20,6 +20,7 @@ pagination:
       <div><A href="#post_{{ p.post_id }}"><span>{{ p.post_subject }}</span></A><a href="#top"></a></div>
       <div><span>{{ p.post_date }}</span> <span>{{ p.post_time }}</span></div>
       <div>{{ p.content }}</div>
+      {% include user_sig.html user_id = p.poster_id %}
       {% include post_attachment_list.html post_id = p.post_id %}
   </div>
 </div>

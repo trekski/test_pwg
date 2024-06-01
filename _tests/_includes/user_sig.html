@@ -1,0 +1,7 @@
+{%- assign u = site.data.users[ include.user_id ] -%}
+{%- if u.signature != '' %}
+<HR class="signature_sep" />
+<div class="user_signature">
+    {{ u.signature }}
+</div>
+{% endif -%}
