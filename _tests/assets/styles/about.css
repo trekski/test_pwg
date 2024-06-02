@@ -11,6 +11,9 @@
             margin-top: 0em;
         }
     }
+    & h2 {
+        color: var(--light-neutral)
+    }
 }
 
 .downloads_table {
