@@ -6,3 +6,4 @@ _psql_dump
 firebase_sdk.html
 .firebase
 _tests/forum/forum_2.md
+*/__pycache__/*
