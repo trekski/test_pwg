@@ -145,7 +145,7 @@ class bbcode:
                 
                 if post_id != None:
 
-                    link_params = post_pagination.get(int(post_id))
+                    link_params = self.post_pagination.get(int(post_id))
 
                     if link_params != None:
                     
