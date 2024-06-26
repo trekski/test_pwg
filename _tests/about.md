@@ -43,7 +43,7 @@ Nie licząc postów usuniętych lub zgubionych podczas kolejnych przenosin, w su
   * **krzyczeć** - 2.081 postów zawiera pogrubiony tekst
   * pismo obrazkowe :framed_picture: - 1.381 postów zawierało osadzony obrazek
 
-Jeżeli chodzi o najaktywniejszych użytkownikóœ forum, to i tu mamy pewne statystyki. Nech za dowód tego, kto napisał najwięcej posłużą twz. "rangi". Na forum stosowano popularny w owych czasach mechanizm rang. Utkownikom automatycznie była nadawany specjalny status, widoczny w ich profilu, na podstawie całkowitej liczby postów, którą napisali. Rangi na PWG były następujące:
+Jeżeli chodzi o najaktywniejszych użytkowników forum, to i tu mamy pewne statystyki. Niech za dowód tego, kto napisał najwięcej posłużą twz. "rangi". Na forum stosowano popularny w owych czasach mechanizm rang. Użytkownikom automatycznie był nadawany specjalny status na podstawie całkowitej liczby postów, którą napisali. Był on widoczny w ich profilu. Rangi na PWG były następujące:
 
 * _Newbie_ - domyślna
 * _Użytkownik_ - od **10** postów. Osiągneło ją 72 użytkowników
@@ -55,7 +55,7 @@ Jeżeli chodzi o najaktywniejszych użytkownikóœ forum, to i tu mamy pewne sta
 * _Rusałka_ - od **1218** postów. Osiągneło ją 3 użytkowników
 * _Emanacja Pi i Sigmy_ - od **1571** postów. Osiągneło ją 4 użytkowników
 * _Ciasteczkowy skrytożerca_ - od **2111** postów. Osiągneło ją 2 użytkowników
-* _Siostra wielokrotnie przełożona_ - od **3333** postów. Tej rangi nie osiągnął nikt :sad:
+* _Siostra wielokrotnie przełożona_ - od **3333** postów. Tej rangi nie osiągnął nikt :pensive:
 * _Chłopiec_ - od **3999** postów...
 
 Z czego ostatnią rangę ustanowiono tak, aby posiadał ją tylko jeden użytkownik w historii całego forum, i to od jego nicka wzięła ona swoją nazwę :wink:. Napisał on w sumie aż 4986 postów!
