@@ -5,7 +5,7 @@ breadcrumbs:
       href: '#'
 --- 
 ## Czemu PWG
-
+test
 PWGay, PWG, czy też "Politechnika Warszawska w Kolorach Tęczy" było to forum prowadzone przez i dla studentów Politechniki Warszawskiej. Było stworzone jako bezpieczna przystań dla osób identyfikujących się jako GLBT+<sup>*</sup>, ale oczywiście mile widziane były osoby z każdej uczelni i to bez względu na szeroko rozumianą orientację czy identyfikację. W czasie istnienia PWG przewinęło się przez nie wiele roczników studentów. PWG powstało w czasach, gdy bycie gejem, lesbijką czy osobą trans często było powodem wykluczenia, a ujawnienie się nieraz było po prostu niebezpieczne.
 
 Dla wielu osób PWG było miejscem, gdzie po raz pierwszy w bezpiecznym i wspierającym środowisku, wśród rówieśników, mogły w pełni odkryć swoją tożsamość. Ale PWG to nie tylko przestrzeń dla osób GLBT+ i grupa wsparcia. Było to też wszystkim miejsce spotkań z innymi studentami Politechniki. Miejsce wielu ożywionych dyskusji na bieżące tematy polityczne i kulturalne. Miejsce wymiany doświadczeń studenckich. Ponad to, na przestrzeni lat istnienia PWG, zawiązało się tu wiele przyjaźni, które trwają do dziś. 
